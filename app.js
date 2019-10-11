@@ -33,7 +33,11 @@ App({
       }
     })
   },
+  onShow(para){
+    console.log(para);
+    console.log('hello im show');
+  },
   globalData: {
     userInfo: null
   }
-})
+}) 
