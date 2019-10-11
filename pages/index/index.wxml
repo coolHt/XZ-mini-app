@@ -1,4 +1,9 @@
 <!--index.wxml-->
 <view class="container">
-  
+  <view class="task-list">
+    <view class="s-task">
+      <image class="task-logo"  mode="widthFix" src="../../assets/images/logo.png"></image>
+      <view class="task-profile"></view>
+    </view>
+  </view>
 </view>
