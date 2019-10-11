@@ -12,7 +12,7 @@ App({
     wx.authorize({
       scope: 'scope.userLocation',
       success: function(){
-        //授权之后获取当前位置
+        //授权之后获取当前位置 hello world
         _this.getLocationPara();
       },
       fail: function(){
