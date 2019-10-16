@@ -1,0 +1,9 @@
+.success-image{
+  padding:30rpx;
+}
+.success-image image{
+  display: block;
+  width: 94px;
+  height: 94px;
+  margin:0 auto;
+}

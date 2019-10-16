@@ -1,10 +1,28 @@
 <!--index.wxml-->
 <view class="container">
   <view class="task-list">
-    <view class="s-task">
-      <image class="task-logo"  mode="widthFix" src="../../assets/images/logo.png"></image>
-      <view class="task-profile"></view>
-    </view>
+    <navigator url="../success/success">
+      <view class="s-task" wx:for="{{taskList}}">
+        <image class="task-logo" mode="widthFix" src="../../assets/images/logo.png"></image>
+        <view class="task-profile">
+          <text class="task-title">行政专员-前台</text>
+          <view class="task-brief-require">
+            <text class="task-orange">3-4.5千/月</text>
+            <text>| 2年经验 |</text>
+            <text>大专以上</text>
+          </view>
+          <view class="task-company">
+            <view class="task-company-brief">
+              <text class="task-company-name">上海电影股份有限公司影院管理分公司</text>
+              <text class="task-company-address">宁波市鄞州区樟树街汉德城24层</text>
+            </view>
+            <view class="task-company-active">
+              <text class="task-active-day">6天前</text>
+              <text class="task-active-distance">0.5km</text>
+            </view>
+          </view>
+        </view>
+      </view>
+    </navigator>
   </view>
 </view>
- 

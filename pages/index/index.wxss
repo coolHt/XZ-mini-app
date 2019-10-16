@@ -5,7 +5,7 @@
 .s-task{
   width: 100%;
   box-sizing: border-box;
-  padding: 10rpx 20rpx;
+  padding: 25rpx 20rpx;
   border-bottom: 1px solid #ddd;
   background: #fff;
   display: flex;
@@ -16,11 +16,54 @@
   display: block;
   width:16%;
   height:auto;
-  background:aquamarine;
 }
 .task-profile{
-  width: 82%;
-  height:220rpx;
-  background:rebeccapurple;
+  width: 80%;
   margin-left: 15rpx;
+}
+.task-title{
+  font-weight: bold;
+  font-size: 35rpx;
+  color: #333;
+}
+.task-brief-require .task-orange {
+  color: #fba157;
+}
+.task-brief-require text{
+  font-size:28rpx;
+  color: #b1b1b1;
+}
+.task-company{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.task-company-brief{
+  width:80%;
+}
+.task-company-active{
+  width:18%;
+}
+.task-active-day,
+.task-company-name {
+  width: 100%;
+  display: block;
+  font-size: 28rpx;
+  color: #b1b1b1;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.task-active-distance, .task-company-address {
+  width: 100%;
+  display: block;
+  font-size: 25rpx;
+  color: #b1b1b1;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.task-active-day,
+.task-active-distance{
+  text-align: right;
 }

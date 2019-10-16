@@ -6,6 +6,7 @@ Page({
   data: {
     motto: 'Hello World',
     userInfo: {},
+    taskList:[1,1,1,1,1,1,1,1,1,1,1,1,1],
     hasUserInfo: false,
     canIUse: wx.canIUse('button.open-type.getUserInfo'), //判断是否可以使用
     time: new Date().getFullYear()
