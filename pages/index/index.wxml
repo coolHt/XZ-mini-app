@@ -13,7 +13,15 @@
   </view>
 
   <!--筛选-->
-  <view class="fliter-list"></view>
+  <view class="filter-list">
+    <view class="filter-item">
+      <view class="item-field">
+        <text>近30天</text>
+        <icon></icon>
+      </view>
+      <view class="filter-inner"></view>
+    </view>
+  </view>
   <!---->
   <view class="task-list">
     <navigator url="../success/success">

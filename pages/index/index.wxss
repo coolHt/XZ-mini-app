@@ -118,10 +118,19 @@
 }
 /****/
 /**筛选**/
-.fliter-list{
+.filter-list{
   width: 100%;
   box-sizing: border-box;
   padding: 25rpx 20px;
   height: 120rpx;
   background: orange;
+  position: relative;
+}
+.filter-inner{
+  position: absolute;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  height: 100rpx;
+  display: none;
 }
