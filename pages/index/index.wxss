@@ -67,3 +67,61 @@
 .task-active-distance{
   text-align: right;
 }
+
+/**搜索框**/
+.index-search{
+  width:100%;
+  display:flex;
+  margin:0 auto;
+  justify-content: space-between;
+  padding:25rpx 20rpx;
+  box-sizing: border-box;
+}
+.index-input-search{
+  width: 87%;
+  height: 50rpx;
+  position: relative;
+}
+.user-avator{
+  width: 13%;
+  height: 80rpx;
+  overflow: hidden;
+}
+.user-avator image{
+  display:block;
+  width: 60rpx;
+  height: 60rpx;
+  margin-top:5px;
+  float: right;
+}
+.index-input-search input{
+  display: block;
+  width: 100%;
+  background: #f2f2f2;
+  border-radius: 5px;
+  font-size: 30rpx;
+  color: #333;
+  height: 80rpx;
+  box-sizing: border-box;
+  padding-left: 70rpx;
+}
+.index-input-search .iconBox {
+  position: absolute;
+  left:0;
+  top:0;
+  width:70rpx;
+  height:80rpx;
+  text-align: center;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+/****/
+/**筛选**/
+.fliter-list{
+  width: 100%;
+  box-sizing: border-box;
+  padding: 25rpx 20px;
+  height: 120rpx;
+  background: orange;
+}

@@ -1,5 +1,20 @@
 <!--index.wxml-->
 <view class="container">
+  <view class="index-search">
+    <view class="index-input-search">
+      <input type="text" placeholder="请输入要查找职位的关键词"></input>
+      <view class="iconBox">
+        <icon type="search" size="15"></icon>
+      </view>
+    </view>
+    <view class="user-avator">
+      <image src="../../assets/images/user.png"></image>
+    </view>
+  </view>
+
+  <!--筛选-->
+  <view class="fliter-list"></view>
+  <!---->
   <view class="task-list">
     <navigator url="../success/success">
       <view class="s-task" wx:for="{{taskList}}">

@@ -1,3 +1,4 @@
+/**蓝  #2f78ff **/
 .success-image{
   padding:30rpx;
 }
@@ -6,4 +7,30 @@
   width: 94px;
   height: 94px;
   margin:0 auto;
+}
+
+.deliver-success{
+  display:block;
+  width: 100%;
+  font-weight: bold;
+  text-align: center;
+  font-size:50rpx;
+  color: #666666;
+  margin-bottom: 120rpx;
+}
+
+.success-back,.success-checkout {
+  display:block;
+  width:90%;
+  border-radius: 5px;
+  font-size: 35rpx;
+  background: #2f78ff;
+  color: #fff;
+  border:1px solid #2f78ff;
+  margin-top: 30rpx;
+}
+
+.success-back{
+  color: #2f78ff !important;
+  background: #fff !important;
 }

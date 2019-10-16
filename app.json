@@ -15,6 +15,9 @@
     "scope.userLocation": {
       "desc": "您的位置信息将用于查找附近的任务"
     }
+  },
+  "usingComponents": {
+    "van-button": "/path/to/vant-weapp/dist/button/index"
   }
 
 }

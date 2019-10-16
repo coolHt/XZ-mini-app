@@ -2,4 +2,9 @@
   <view class="success-image">
     <image src="../../assets/images/success-image.png"></image>
   </view>
+  <text class="deliver-success">报名成功</text>
+  <button class="success-checkout">查看职位</button>
+  <navigator url="../index/index" hover-class="none">
+    <button class="success-back">返回首页</button>
+  </navigator>
 </view>

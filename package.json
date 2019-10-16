@@ -1,0 +1,22 @@
+{
+  "name": "xz-mini-app",
+  "version": "1.0.0",
+  "description": "Mini App of XZ that provide curriculums for personal job career and temporary job.",
+  "main": "app.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/coolHt/Xz-mini-app.git"
+  },
+  "author": "",
+  "license": "ISC",
+  "bugs": {
+    "url": "https://github.com/coolHt/Xz-mini-app/issues"
+  },
+  "homepage": "https://github.com/coolHt/Xz-mini-app#readme",
+  "dependencies": {
+    "vant-weapp": "^1.0.0-beta.0"
+  }
+}
