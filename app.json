@@ -17,7 +17,7 @@
     }
   },
   "usingComponents": {
-    
+    "van-transition": "/miniprogram_npm/vant-weapp/transition/index"
   }
   
 

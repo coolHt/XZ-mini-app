@@ -15,11 +15,45 @@
   <!--筛选-->
   <view class="filter-list">
     <view class="filter-item">
-      <view class="item-field">
+      <view class="item-field {{listIndex == 1 ? 'navClick' : ''}}" bindtap="showList" data-num="1">
         <text>近30天</text>
-        <icon></icon>
+        <image wx:if="{{listIndex != 1}}" src="../../assets/images/arrow_down.png" class="filter-arrow"></image>
+        <image wx:else src="../../assets/images/arrow_down_b.png" class="filter-arrow  toggleDirection"></image>
       </view>
-      <view class="filter-inner"></view>
+      <view class="item-field {{listIndex == 2 ? 'navClick' : ''}}" bindtap="showList" data-num="2">
+        <text>附件20km</text>
+        <image wx:if="{{listIndex != 2}}" src="../../assets/images/arrow_down.png" class="filter-arrow"></image>
+        <image wx:else src="../../assets/images/arrow_down_b.png" class="filter-arrow  toggleDirection"></image>
+      </view>
+      <view class="item-field {{listIndex == 3 ? 'navClick' : ''}}" bindtap="showList" data-num="3">
+        <text>实时通知</text>
+        <image wx:if="{{listIndex != 3}}" src="../../assets/images/arrow_down.png" class="filter-arrow"></image>
+        <image wx:else src="../../assets/images/arrow_down_b.png" class="filter-arrow  toggleDirection"></image>
+      </view>
+      
+    </view>
+    <view>
+      <van-transition show="{{listIndex == 1 ? true : false}}" custom-class="block">
+        <view class="filter-inner">
+          <view class="innerItem">近5天</view>
+          <view class="innerItem">近一周</view>
+          <view class="innerItem">近两周</view>
+        </view>
+      </van-transition>
+      <van-transition show="{{listIndex == 2 ? true : false}}" custom-class="block">
+        <view class="filter-inner">
+          <view class="innerItem">附近2km</view>
+          <view class="innerItem">附近5km</view>
+          <view class="innerItem">附近10km</view>
+        </view>
+      </van-transition>
+      <van-transition show="{{listIndex == 3 ? true : false}}" custom-class="block">
+        <view class="filter-inner">
+          <view class="innerItem">通知一</view>
+          <view class="innerItem">通知二</view>
+          <view class="innerItem">通知三</view>
+        </view>
+      </van-transition>
     </view>
   </view>
   <!---->
