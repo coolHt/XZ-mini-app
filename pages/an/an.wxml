@@ -1,0 +1,11 @@
+<view style="height:100rpx;background:#f5f5f5" bindtap="tapToggale">
+</view>
+    <view class="testV  {{zindex == 1 ? 'fullHeight' : ''}}">
+      <view style="padding:30rpx 0">1</view>
+      <view style="padding:30rpx 0">1</view>
+      <view style="padding:30rpx 0">1</view>
+      <view style="padding:30rpx 0">1</view>
+      <view style="padding:30rpx 0">1</view>
+      <view style="padding:30rpx 0">1</view>
+      <view style="padding:30rpx 0">1</view>
+    </view>

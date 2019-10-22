@@ -158,9 +158,6 @@
   justify-content: space-between;
 }
 .filter-inner{
-  /* position: absolute;
-  left: 0;
-  top: 80rpx; */
   width: 100%;
   background: #fff;
 }
@@ -174,4 +171,37 @@
 }
 .filterClick {
   display: block;
+}
+/**搜索结果**/
+.task-result{
+  width: 100%;
+  box-sizing: border-box;
+  padding:30rpx 20rpx;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.result-text{
+  color: #b1b1b1;
+  font-size: 30rpx;
+  font-weight: bold;
+}
+.searchForName {
+  color: #333;
+  font-size: 35rpx;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+
+}
+.result-text .result-num {
+  color: #fba157;
+}
+.searchDown{
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-size: 30rpx;
+  color: #333;
+  padding: 40rpx 0;
 }

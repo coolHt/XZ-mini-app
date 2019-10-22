@@ -1,6 +1,8 @@
 {
   "pages": [
     "pages/index/index",
+    "pages/member/member",
+    "pages/jobDetail/jobDetail",
     "pages/success/success",
     "pages/logs/logs"
   ],
@@ -11,14 +13,13 @@
     "navigationBarTextStyle": "black"
   },
   "sitemapLocation": "sitemap.json",
-  "permission":{
+  "permission": {
     "scope.userLocation": {
       "desc": "您的位置信息将用于查找附近的任务"
     }
   },
   "usingComponents": {
-    "van-transition": "/miniprogram_npm/vant-weapp/transition/index"
+    "van-transition": "/miniprogram_npm/vant-weapp/transition/index",
+    "van-switch": "/miniprogram_npm/vant-weapp/switch/index"
   }
-  
-
 }

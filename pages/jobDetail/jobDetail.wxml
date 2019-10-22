@@ -1,0 +1,86 @@
+<view class="container detailContainer">
+  <!--这里是个组件-->
+  <view class="custom-nav"
+    style="width: {{w}}px;margin-top: {{topSpace}}px;height: {{buttonHeight}}px;line-height: {{buttonHeight}}px">
+    {{pageTitle}}</view>
+  <!---->
+  <view class="jobDetailContainer">
+    <view class="jobPartition">
+      <text class="detailJobTitle">外贸业务员+包住五险一金</text>
+      <view class="salaryMount">
+        <text class="salaryNum">8000-10000</text>
+        元
+      </view>
+      <view class="detailUpdate">
+        <text>更新: 2019-10-10</text>
+        <text>浏览: 13240次</text>
+      </view>
+    </view>
+    <!--职位基本要求-->
+    <view class="jobPartition">
+      <view class="jobProfile">
+        <text class="profileTitle">职位:</text>
+        <text class="profileContent">销售代表</text>
+      </view>
+      <view class="jobProfile">
+        <text class="profileTitle">要求:</text>
+        <text class="profileContent">大专/经验1-2年</text>
+      </view>
+      <view class="jobProfile">
+        <text class="profileTitle">人数:</text>
+        <text class="profileContent">1人</text>
+      </view>
+      <view class="jobProfile">
+        <text class="profileTitle">地区:</text>
+        <text class="profileContent">宁波</text>
+      </view>
+      <view class="jobProfile tagProfile">
+        <text class="profileTitle">福利:</text>
+        <view class="profileTags">
+          <text class="s_tag">五险一金</text>
+          <text class="s_tag">包吃包住</text>
+          <text class="s_tag">话补</text>
+          <text class="s_tag">饭补</text>
+          <text class="s_tag">年底双薪</text>
+        </view>
+      </view>
+    </view>
+    <!--职位简介-->
+    <text class="partitionTitle">职位简介</text>
+    <view class="jobPartition">
+      <text class="job_brief_text">任职资格: \n 知识: \n 教育背景: \n 技能: \n </text>
+    </view>
+    <!--企业介绍-->
+    <text class="partitionTitle">企业简介</text>
+    <view class="jobPartition">
+      <text class="companyProfile">均胜电子成立于2004年，企业初创时期就确立了同步设计理念，与客户同步,实时做出反应,随时解决客户问题。为前沿客户量身打造全方位解决方案,切实满足客户需求。2009年开始企业实施并购战略,创新产品升级改造途径，2009年并购上海华德,扩张并整合国内产品系。2011年并购德国普瑞，通过德国普瑞的海外并购，均胜电子让德国普瑞的创新能力和生产品质管控与中国公司的资金优势和市场资源互补，提前实现了全球化和转型升级战略目标。<text class="showMore" decode="{{true}}">&nbsp;&nbsp;...&nbsp;查看更多</text></text>
+
+      <view class="companyCard">
+        <view class="cardContent">
+          <image class="cardImage" mode="widthFix" src="../../assets/images/logo.png"></image>
+          <view class="cardProfile">
+            <text class="cardTitle">宁波均胜电子集团</text>
+            <view class="starBox">
+              <image mode="widthFix" src="../../assets/images/star.png"></image>
+              <image mode="widthFix" src="../../assets/images/star.png"></image>
+              <image mode="widthFix" src="../../assets/images/star.png"></image>
+              <image mode="widthFix" src="../../assets/images/star.png"></image>
+              <image mode="widthFix" src="../../assets/images/star.png"></image>
+            </view>
+            <text class="cardTrait">民营 | 1000人</text>
+          </view>
+        </view>
+      </view>
+      <view class="company_locate">
+        <view class="locate_address">
+          <image mode="widthFix" class="locate_logo" src="../../assets/images/locate.png"></image>
+          <text>江苏江苏工业园工业园区娄葑群星三路68号</text>
+        </view>
+        <view class="navigateBtn">导航</view>
+      </view>
+    </view>
+  </view>
+  <navigator url="../success/success">
+    <button class="signUp">我要报名</button>
+  </navigator>
+</view>

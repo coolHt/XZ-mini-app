@@ -11,7 +11,11 @@ Page({
     canIUse: wx.canIUse('button.open-type.getUserInfo'), //判断是否可以使用
     time: new Date().getFullYear(),
     listIndex: 0,
-    show: false
+    show: false,
+    activeNames: ['1'],
+    result_length: 90,
+    //只搜索职位名称
+    isName: false
   },
   //事件处理函数
   bindViewTap: function() {
@@ -28,5 +32,16 @@ Page({
   },
   onLoad: function () {
     
+  },
+  onChange(event) {
+    this.setData({
+      activeNames: event.detail
+    });
+  },
+  //是否只搜索职位名称
+  toggleSearchName({detail}) {
+    this.setData({
+      isName: !this.data.isName
+    });
   }
 });

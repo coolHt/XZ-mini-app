@@ -8,7 +8,9 @@
       </view>
     </view>
     <view class="user-avator">
-      <image src="../../assets/images/user.png"></image>
+      <navigator url="../member/member">
+        <image src="../../assets/images/user.png"></image>
+      </navigator>
     </view>
   </view>
 
@@ -30,7 +32,6 @@
         <image wx:if="{{listIndex != 3}}" src="../../assets/images/arrow_down.png" class="filter-arrow"></image>
         <image wx:else src="../../assets/images/arrow_down_b.png" class="filter-arrow  toggleDirection"></image>
       </view>
-      
     </view>
     <view>
       <van-transition show="{{listIndex == 1 ? true : false}}" custom-class="block">
@@ -56,10 +57,20 @@
       </van-transition>
     </view>
   </view>
+  <!--结果-->
+  <view class="task-result">
+    <view class="result-text">
+      共 <text class="result-num">{{result_length}}</text> 条结果
+    </view>
+    <view class="searchForName">
+      只搜索职位名称
+      <van-switch checked="{{isName}}" style="margin-left:10rpx;position:relative;top:8rpx" bind:change="toggleSearchName" size="45rpx"></van-switch>
+    </view>
+  </view>
   <!---->
   <view class="task-list">
-    <navigator url="../success/success">
-      <view class="s-task" wx:for="{{taskList}}">
+    <navigator url="../jobDetail/jobDetail" wx:for="{{taskList}}">
+      <view class="s-task">
         <image class="task-logo" mode="widthFix" src="../../assets/images/logo.png"></image>
         <view class="task-profile">
           <text class="task-title">行政专员-前台</text>
@@ -81,5 +92,6 @@
         </view>
       </view>
     </navigator>
+    <text class="searchDown">已经到底了</text>
   </view>
 </view>
