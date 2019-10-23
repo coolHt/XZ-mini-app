@@ -1,0 +1,3 @@
+<view class="custom-nav {{titlePos == 'center'?'posCenter':'posLeft'}}" style="height: {{buttonHeight}}px;line-height: {{buttonHeight}}px;margin-top:{{topSpace}}px">
+  <text class="custom-nav-title">{{title}}</text>
+</view>
