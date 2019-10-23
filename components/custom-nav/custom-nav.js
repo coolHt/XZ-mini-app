@@ -23,7 +23,7 @@ Component({
     topSpace: 0, //按钮距离顶部的位置
     buttonHeight: 0,  //按钮的高度,
     title: '',
-    titlePos: 'center'
+    titlePos: ''
   },
 
   //生命周期

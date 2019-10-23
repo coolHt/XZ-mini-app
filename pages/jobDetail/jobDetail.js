@@ -5,10 +5,6 @@ Page({
    * 页面的初始数据
    */
   data: {
-    w: 0, //屏宽
-    h: 0, //屏高
-    buttonHeight: 0, //按钮高
-    topSpace: 0, //距离顶部的间距
     pageTitle: '均胜电子' //自定义导航文字
   },
 
@@ -23,20 +19,7 @@ Page({
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-    console.log('hello');
-    console.log(wx.getMenuButtonBoundingClientRect());
-    let menuButton = wx.getMenuButtonBoundingClientRect();
-    let _this = this;
-    wx.getSystemInfo({
-      success: function(res){
-        _this.setData({
-          w: res.screenWidth,
-          h: res.screenHeight,
-          topSpace: menuButton.top,
-          buttonHeight: menuButton.height
-        });
-      }
-    });
+    
   },
 
   /**

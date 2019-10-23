@@ -1,8 +1,8 @@
 {
   "pages": [
+    "pages/jobDetail/jobDetail",
     "pages/member/member",
     "pages/index/index",
-    "pages/jobDetail/jobDetail",
     "pages/success/success",
     "pages/logs/logs"
   ],
@@ -20,6 +20,7 @@
   },
   "usingComponents": {
     "van-transition": "/miniprogram_npm/vant-weapp/transition/index",
-    "van-switch": "/miniprogram_npm/vant-weapp/switch/index"
+    "van-switch": "/miniprogram_npm/vant-weapp/switch/index",
+    "custom-nav": "/components/custom-nav/custom-nav"
   }
 }

@@ -1,8 +1,6 @@
 <view class="container detailContainer">
   <!--这里是个组件-->
-  <view class="custom-nav"
-    style="width: {{w}}px;margin-top: {{topSpace}}px;height: {{buttonHeight}}px;line-height: {{buttonHeight}}px">
-    {{pageTitle}}</view>
+  <custom-nav navTitle="{{pageTitle}}"></custom-nav>
   <!---->
   <view class="jobDetailContainer">
     <view class="jobPartition">
