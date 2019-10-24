@@ -50,6 +50,15 @@ Component({
    * 组件的方法列表
    */
   methods: {
-
+    //返回
+    backupRoute(){
+      let routeLength = getCurrentPages().length;
+      if (routeLength > 1){
+        wx.navigateBack({
+          delta: 1
+        });
+      }
+      
+    }
   }
-})
+});

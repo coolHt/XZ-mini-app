@@ -1,4 +1,4 @@
 <view class="custom-nav {{titlePos == 'center'?'posCenter':'posLeft'}}" style="height: {{buttonHeight}}px;line-height: {{buttonHeight}}px;margin-top:{{topSpace}}px;" >
-  <image class="route-back" src="../../assets/images/arrow_down.png" style="width:{{buttonHeight}}px"></image>
+  <image bindtap="backupRoute" class="route-back" src="../../assets/images/arrow_down.png" style="width:{{buttonHeight}}px"></image>
   <text class="custom-nav-title" style="padding-left: {{titlePos == 'center' ? '0' : buttonHeight + 20}}px">{{title}}</text>
 </view>
