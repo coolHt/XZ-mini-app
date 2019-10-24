@@ -1,3 +1,43 @@
 <view class="container">
   <custom-nav navTitle="我的" pos="left"></custom-nav>
+  <view class="member-container">
+    <view class="member-profile">
+      <view class="member-avator">
+        <image src="../../assets/images/logo.png" mode="widthFix"></image>
+        <text class="member-name">小小少年</text>
+      </view>
+      <view class="memer-check">
+        <text>查看我的资料</text>
+        <image src="../../assets/images/arrow-right.png"></image>
+      </view>
+    </view>
+    <!--我的工作-->
+    <text class="memer-title">我的工作</text>
+    <view class="memer-serve">
+      <view class="serve-item">
+        <image mode="widthFix" src="../../assets/images/enrolment.png"></image>
+        <text>已报名</text>
+      </view>
+      <view class="serve-item">
+        <image mode="widthFix" src="../../assets/images/interview.png"></image>
+        <text>待面试</text>
+      </view>
+      <view class="serve-item">
+        <image mode="widthFix" src="../../assets/images/sign.png"></image>
+        <text>已签约</text>
+      </view>
+      <view class="serve-item">
+        <image mode="widthFix" src="../../assets/images/all.png"></image>
+        <text>全部</text>
+      </view>
+    </view>
+    <!--工资单提醒-->
+    <view class="memer-serve check-salary">
+      <text>九月第一周工资单已发放</text>
+      <view style="display:flex;align-items:center;">
+        <text>点击查看</text>
+        <image src="../../assets/images/purple-arrow.png"></image>
+      </view>
+    </view>
+  </view>
 </view>

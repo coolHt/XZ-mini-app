@@ -20,7 +20,7 @@
   position: absolute;
   padding:0 10px;
   left:0;
-  top: 0;
+  top: 0; 
   height: 100%;
   transform: rotateZ(90deg);
 }
