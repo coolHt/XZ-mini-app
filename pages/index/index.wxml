@@ -7,7 +7,7 @@
         <icon type="search" size="15"></icon>
       </view>
     </view>
-    <view class="user-avator">
+    <view class="user-avatar">
       <navigator url="../member/member">
         <image src="../../assets/images/user.png"></image>
       </navigator>

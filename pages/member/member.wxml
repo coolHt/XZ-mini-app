@@ -2,7 +2,7 @@
   <custom-nav navTitle="我的" pos="left"></custom-nav>
   <view class="member-container">
     <view class="member-profile">
-      <view class="member-avator">
+      <view class="member-avatar">
         <image src="../../assets/images/logo.png" mode="widthFix"></image>
         <text class="member-name">小小少年</text>
       </view>
@@ -43,7 +43,7 @@
     </view>
     <!--member functional-->
     <view class="function-container">
-      <navigator url="../index/index">
+      <navigator url="../message/message">
         <view class="member-functional">
           <view class="functional-title">
             <image src="../../assets/images/message_icon.png"></image>

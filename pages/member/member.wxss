@@ -11,12 +11,12 @@
   align-items: center;
   justify-content: space-between;
 }
-.member-avator {
+.member-avatar {
   width: 65%;
   display: flex;
   align-items: center;
 }
-.member-avator image{
+.member-avatar image{
   width: 30%;
   margin-right: 5%;
   border-radius: 50%;

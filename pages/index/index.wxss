@@ -82,12 +82,12 @@
   height: 50rpx;
   position: relative;
 }
-.user-avator{
+.user-avatar{
   width: 13%;
   height: 80rpx;
   overflow: hidden;
 }
-.user-avator image{
+.user-avatar image{
   display:block;
   width: 60rpx;
   height: 60rpx;

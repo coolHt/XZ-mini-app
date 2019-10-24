@@ -1,0 +1,24 @@
+<view class="container">
+  <custom-nav navTitle="我的消息" pos="left"></custom-nav>
+  <view class="message-container">
+    <text class="message-title">全部消息通知</text>
+
+    <view class="message-list">
+      <view class="message-item">
+        <text class="message-type">活动消息</text>
+        <text class="message-inner">亲爱的李明【杰博万圣节亲子聚会活动】报名成功，请按时参加哟~</text>
+        <text class="message-date">2019-01-16</text>
+      </view>
+      <view class="message-item">
+        <text class="message-type">购买消息</text>
+        <text class="message-inner">亲爱的李明，您已成功购买了【基础职位服务套餐】，专属顾问会联系您，感谢您的选择~</text>
+        <text class="message-date">2019-01-16</text>
+      </view>
+      <view class="message-item">
+        <text class="message-type">奖励消息</text>
+        <text class="message-inner">亲爱的李明【杰博万圣节亲子聚会活动】报名成功，请按时参加哟~</text>
+        <text class="message-date">2019-01-16</text>
+      </view>
+    </view>
+  </view>
+</view>
