@@ -33,7 +33,7 @@
         <image wx:else src="../../assets/images/arrow_down_b.png" class="filter-arrow  toggleDirection"></image>
       </view>
     </view>
-    <view>
+    <view style="position:relative;z-index:20">
       <van-transition show="{{listIndex == 1 ? true : false}}" custom-class="block">
         <view class="filter-inner">
           <view class="innerItem">近5天</view>
@@ -76,7 +76,7 @@
           <text class="task-title">行政专员-前台</text>
           <view class="task-brief-require">
             <text class="task-orange">3-4.5千/月</text>
-            <text>| 2年经验 |</text>
+            <text> | 2年经验 | </text>
             <text>大专以上</text>
           </view>
           <view class="task-company">

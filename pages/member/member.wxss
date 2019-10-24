@@ -30,28 +30,28 @@
   font-size: 44rpx;
   text-overflow: ellipsis;
 }
-.memer-check{
+.member-check{
   width: 30%;
   display: flex;
   align-items: center;
 }
-.memer-check text {
+.member-check text {
   white-space: nowrap;
   font-size: 30rpx;
   color: #b1b1b1;
 }
-.memer-check image{
+.member-check image{
   width: 30rpx;
   height: 30rpx;
 }
-.memer-title{
+.member-title{
   width: 100%;
   box-sizing: border-box;
   display: block;
   font-size: 38rpx;
   padding: 30rpx 0;
 }
-.memer-serve{
+.member-serve{
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -59,19 +59,20 @@
   padding: 35rpx 30rpx;
   box-shadow: #ddd 0rpx 5rpx 20rpx 0rpx;
   border-radius: 5px;
+  margin-top: 30rpx;
 }
-.memer-serve .serve-item{
+.member-serve .serve-item{
   text-align: center;
   width: 15%;
 }
-.memer-serve .serve-item text{
+.member-serve .serve-item text{
   font-size: 30rpx;
   color: #b1b1b1;
   display: block;
   margin-top:15rpx;
   text-align: center;
 }
-.memer-serve .serve-item image{
+.member-serve .serve-item image{
   display: block;
   width: 70%;
   margin: 0 auto;
@@ -80,11 +81,53 @@
   margin-top: 30rpx;
 }
 .check-salary image{
-  width: 30rpx;
-  height: 30rpx;
+  width: 25rpx;
+  height: 25rpx;
+  margin-left: 5rpx;
 }
 .check-salary text{
   color: #5f4b8b;
-  font-size: 35rpx;
+  font-size: 33rpx;
   display: block;
+  white-space: nowrap;
+}
+.salaryText{
+  width: 65%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.checkBtn {
+  width:100%;
+  display:flex;
+  align-items:center;
+  justify-content: flex-end;
+}
+.function-container{
+  margin-top:25rpx;
+}
+.member-functional{
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 30rpx 0;
+}
+.functional-title{
+  display: flex;
+  align-items: center;
+}
+.functional-title image{
+  display: block;
+  width: 40rpx;
+  height: 40rpx;
+  margin-right: 10rpx;
+}
+.functional-title text{
+  color: #333;
+  font-size: 33rpx;
+}
+.gotoFunction{
+  width: 40rpx;
+  height: 40rpx;
+  transform:rotateZ(-90deg);
 }

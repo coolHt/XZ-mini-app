@@ -1,10 +1,5 @@
 /* pages/jobDetail/jobDetail.wxss */  
-.custom-nav{
-  color: #333;
-  font-size: 18px;
-  font-weight: bold;
-  text-align: center;
-}
+
 .jobDetailContainer{
   width: 100%;
   box-sizing: border-box;
@@ -17,7 +12,7 @@
 }
 .salaryMount{
   color: #fba157;
-  font-size: 30rpx;
+  font-size: 33rpx;
   margin: 20rpx 0;
 }
 .salaryMount .salaryNum {
@@ -25,7 +20,7 @@
 }
 .detailUpdate {
   color: #b1b1b1;
-  font-size: 30rpx;
+  font-size: 33rpx;
   width: 100%;
   display: flex;
   justify-content: space-between;
@@ -41,13 +36,13 @@
 }
 .jobProfile .profileTitle {
   color: #b1b1b1;
-  font-size: 35rpx;
+  font-size: 33rpx;
   margin-right: 15rpx;
   white-space: nowrap;
 }
 .jobProfile .profileContent {
   color: #333;
-  font-size: 35rpx;
+  font-size: 33rpx;
 }
 .tagProfile{
   width: 100%;
@@ -63,24 +58,24 @@
   margin-bottom: 8rpx;
   margin-right: 8rpx;
   border: 1px solid #fba157;
-  font-size: 30rpx;
+  font-size: 33rpx;
 }
 .partitionTitle{
   width: 100%;
   box-sizing: border-box;
   display: block;
-  font-size: 38rpx;
+  font-size: 40rpx;
   padding: 30rpx 20rpx;
   border-bottom: 1px solid #ddd;
 }
 .job_brief_text{
   color: #b1b1b1;
-  font-size: 35rpx;
+  font-size: 33rpx;
   line-height: 42rpx;
 }
 .companyProfile{
   position: relative;
-  font-size: 35rpx;
+  font-size: 33rpx;
   line-height: 55rpx;
   display: -webkit-box;
   -webkit-box-orient: vertical;
@@ -94,7 +89,7 @@
   bottom:0;
   color: #4ea1db;
   background: #fff;
-  font-size: 35rpx;
+  font-size: 33rpx;
   line-height: 45rpx;
 }
 .companyCard{
@@ -126,10 +121,10 @@
   width: 100%;
 }
 .cardTrait{
-  font-size: 32rpx;
+  font-size: 33rpx;
 }
 .cardTitle{
-  font-size: 38rpx;
+  font-size: 40rpx;
 }
 .starBox{
   padding: 10rpx 0;
@@ -148,7 +143,7 @@
   justify-content: space-between;
 }
 .locate_address{
-  font-size: 35rpx;
+  font-size: 33rpx;
   margin-right: 30rpx;
   display: flex;
   align-items: center;
@@ -164,7 +159,7 @@
   padding: 10rpx 30rpx;
   border-radius: 60rpx;
   white-space: nowrap;
-  font-size: 35rpx;
+  font-size: 33rpx;
 }
 .detailContainer{
   padding-bottom: 150rpx;

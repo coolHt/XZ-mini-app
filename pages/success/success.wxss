@@ -23,7 +23,7 @@
   display:block;
   width:90%;
   border-radius: 5px;
-  font-size: 35rpx;
+  font-size: 33rpx;
   background: #2f78ff;
   color: #fff;
   border:1px solid #2f78ff;

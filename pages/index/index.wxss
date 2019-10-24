@@ -23,14 +23,14 @@
 }
 .task-title{
   font-weight: bold;
-  font-size: 35rpx;
+  font-size: 33rpx;
   color: #333;
 }
 .task-brief-require .task-orange {
   color: #fba157;
 }
 .task-brief-require text{
-  font-size:28rpx;
+  font-size:33rpx;
   color: #b1b1b1;
 }
 .task-company{
@@ -99,7 +99,7 @@
   width: 100%;
   background: #f2f2f2;
   border-radius: 5px;
-  font-size: 30rpx;
+  font-size: 33rpx;
   color: #333;
   height: 80rpx;
   box-sizing: border-box;
@@ -135,7 +135,7 @@
   padding: 0 20rpx
 }
 .item-field text{
-  font-size: 30rpx;
+  font-size: 33rpx;
   color: #333;
   transition: all 0.2s linear;
 }
@@ -165,7 +165,7 @@
   width:90%;
   margin: 0 auto;
   padding: 25rpx 0;
-  font-size: 30rpx;
+  font-size: 28rpx;
   color: #333;
   border-bottom: 1px solid #f5f5f5;
 }
@@ -183,12 +183,12 @@
 }
 .result-text{
   color: #b1b1b1;
-  font-size: 30rpx;
+  font-size: 33rpx;
   font-weight: bold;
 }
 .searchForName {
   color: #333;
-  font-size: 35rpx;
+  font-size: 33rpx;
   font-weight: bold;
   display: flex;
   align-items: center;
@@ -201,7 +201,7 @@
   display: block;
   width: 100%;
   text-align: center;
-  font-size: 30rpx;
+  font-size: 33rpx;
   color: #333;
   padding: 40rpx 0;
 }

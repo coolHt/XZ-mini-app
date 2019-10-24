@@ -6,14 +6,14 @@
         <image src="../../assets/images/logo.png" mode="widthFix"></image>
         <text class="member-name">小小少年</text>
       </view>
-      <view class="memer-check">
+      <view class="member-check">
         <text>查看我的资料</text>
         <image src="../../assets/images/arrow-right.png"></image>
       </view>
     </view>
     <!--我的工作-->
-    <text class="memer-title">我的工作</text>
-    <view class="memer-serve">
+    <!-- <text class="member-title">我的工作</text> -->
+    <view class="member-serve">
       <view class="serve-item">
         <image mode="widthFix" src="../../assets/images/enrolment.png"></image>
         <text>已报名</text>
@@ -32,12 +32,47 @@
       </view>
     </view>
     <!--工资单提醒-->
-    <view class="memer-serve check-salary">
-      <text>九月第一周工资单已发放</text>
-      <view style="display:flex;align-items:center;">
-        <text>点击查看</text>
-        <image src="../../assets/images/purple-arrow.png"></image>
-      </view>
+    <view class="member-serve check-salary">
+      <text class="salaryText">九月第一周工资单已发放九月第一周工资单已发放九月第一周工资单已发放</text>
+      <navigator url="../index/index" style="display:block;width: 30%;">
+        <view class="checkBtn">
+          <text>点击查看</text>
+          <image src="../../assets/images/purple-arrow.png"></image>
+        </view>
+      </navigator>
     </view>
+    <!--member functional-->
+    <view class="function-container">
+      <navigator url="../index/index">
+        <view class="member-functional">
+          <view class="functional-title">
+            <image src="../../assets/images/message_icon.png"></image>
+            <text>我的消息</text>
+          </view>
+          <image class="gotoFunction" src="../../assets/images/arrow_down.png"></image>
+        </view>
+      </navigator>
+      
+      <navigator url="../index/index">
+        <view class="member-functional">
+          <view class="functional-title">
+            <image src="../../assets/images/talent_icon.png"></image>
+            <text>人才经济</text>
+          </view>
+          <image class="gotoFunction" src="../../assets/images/arrow_down.png"></image>
+        </view>
+      </navigator>
+      
+      <navigator url="../index/index">
+        <view class="member-functional">
+          <view class="functional-title">
+            <image src="../../assets/images/about_icon.png"></image>
+            <text>关于我们</text>
+          </view>
+          <image class="gotoFunction" src="../../assets/images/arrow_down.png"></image>
+        </view>
+      </navigator>
+    </view>
+    
   </view>
 </view>
