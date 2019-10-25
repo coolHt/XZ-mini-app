@@ -1,3 +1,20 @@
 <view class="container">
-  企业详情
+  <custom-nav navTitle="企业介绍" pos="left"></custom-nav>
+  
+  <view class="enterprise-container">
+    <view class="enterprise-profile">
+      <image src="../../assets/images/logo.png" mode="widthFix"></image>
+      <view class="profile-inner">
+        <text class="enterprise-name">均胜电子</text>
+        <view class="enterprise-field">
+          <text class="field-text">OEM(自主)</text>
+        </view>
+        <view class="enterprise-field">
+          <text class="field-text">私营/民办企业 | </text>
+          <text class="field-text">1-49人 | </text>
+          <text class="field-text">互联网</text>
+        </view>
+      </view>
+    </view>
+  </view>
 </view>

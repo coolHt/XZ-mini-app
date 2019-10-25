@@ -1,1 +1,31 @@
 /* pages/companyDetail/companyDetail.wxss */
+.enterprise-container {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 20px;
+}
+.enterprise-profile{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.enterprise-profile image{
+  width: 23%;
+  display: block;
+}
+.profile-inner{
+  width: 70%;
+}
+.enterprise-name{
+  display: block;
+  width: 100%;
+  color: #333;
+  font-size: 40rpx;
+  font-weight: bold;
+}
+.enterprise-field {
+
+}
+.field-text{
+  font-size: 28rpx;
+}
