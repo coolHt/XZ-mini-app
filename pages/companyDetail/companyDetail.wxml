@@ -16,5 +16,16 @@
         </view>
       </view>
     </view>
+    <!---->
+    <view class="switchTab">
+      <view class="tab-item {{switchType == '1' ? 'activeItem' : ''}}" data-vindex='1' bindtap="switchTab">企业主页</view>
+      <view class="tab-item {{switchType == '2' ? 'activeItem' : ''}}" data-vindex='2' bindtap="switchTab">在招职位(12)</view>
+    </view>
+    <!--企业主页-->
+    <view wx:if="{{switchType == '1'}}" class="">
+      
+    </view>
+    <!--在招职位-->
+    <view wx:else>在招职位</view>
   </view>
 </view>

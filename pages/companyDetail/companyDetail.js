@@ -5,7 +5,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    switchType: '1'
   },
 
   /**
@@ -62,5 +62,14 @@ Page({
    */
   onShareAppMessage: function () {
 
+  },
+  //切换
+  switchTab: function(v){
+    var currentV = v.currentTarget.dataset;
+    if (this.data.switchType != currentV.vindex){
+      this.setData({
+        switchType: currentV.vindex
+      });
+    }
   }
-})
+});
