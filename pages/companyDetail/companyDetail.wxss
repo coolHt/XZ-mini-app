@@ -72,3 +72,6 @@
 .mapStyle{
   width: 100%;
 }
+.companyTask{
+  margin-top: 40rpx;
+}

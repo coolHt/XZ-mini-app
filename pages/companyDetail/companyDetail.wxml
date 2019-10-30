@@ -32,10 +32,89 @@
       <text class="introductionTitle">公司地址</text>
       <text class="introduction-text">浙江省-台州市-椒江区浙江省台州市椒江区市府大道289号耀达大厦17层1707号</text>
       <view>
-        <map class="mapStyle"  scale="30"  show-location="{{true}}" latitude="{{latitdueNum}}" longitude="{{longitudeNum}}"></map>
+        <map class="mapStyle" scale="30" show-location="{{true}}" latitude="{{latitdueNum}}"
+          longitude="{{longitudeNum}}"></map>
       </view>
     </view>
     <!--在招职位-->
-    <view wx:else class="tabContainer">在招职位</view>
+    <view wx:else class="tabContainer companyTask">
+      <view class="task-list">
+        <navigator url="../jobDetail/jobDetail">
+          <view class="s-task">
+            <image class="task-logo" mode="widthFix" src="../../assets/images/logo.png"></image>
+            <view class="task-profile">
+              <view class="task-title-container">
+                <text class="task-title">行政专员-前台</text>
+                <text class="task-active-day">6天前</text>
+              </view>
+              <view class="task-brief-require">
+                <text class="task-orange">3-4.5千/月</text>
+                <text>| 2年经验 |</text>
+                <text>大专以上</text>
+              </view>
+              <view class="task-company">
+                <view class="task-company-brief">
+                  <text class="task-company-name">上海电影股份有限公司影院管理分公司</text>
+                  <text class="task-company-address">宁波市鄞州区樟树街汉德城24层</text>
+                </view>
+                <view class="task-company-active">
+                  <text class="task-active-distance">0.5km</text>
+                </view>
+              </view>
+            </view>
+          </view>
+        </navigator>
+                <navigator url="../jobDetail/jobDetail">
+          <view class="s-task">
+            <image class="task-logo" mode="widthFix" src="../../assets/images/logo.png"></image>
+            <view class="task-profile">
+              <view class="task-title-container">
+                <text class="task-title">行政专员-前台</text>
+                <text class="task-active-day">6天前</text>
+              </view>
+              <view class="task-brief-require">
+                <text class="task-orange">3-4.5千/月</text>
+                <text>| 2年经验 |</text>
+                <text>大专以上</text>
+              </view>
+              <view class="task-company">
+                <view class="task-company-brief">
+                  <text class="task-company-name">上海电影股份有限公司影院管理分公司</text>
+                  <text class="task-company-address">宁波市鄞州区樟树街汉德城24层</text>
+                </view>
+                <view class="task-company-active">
+                  <text class="task-active-distance">0.5km</text>
+                </view>
+              </view>
+            </view>
+          </view>
+        </navigator>
+                <navigator url="../jobDetail/jobDetail">
+          <view class="s-task">
+            <image class="task-logo" mode="widthFix" src="../../assets/images/logo.png"></image>
+            <view class="task-profile">
+              <view class="task-title-container">
+                <text class="task-title">行政专员-前台</text>
+                <text class="task-active-day">6天前</text>
+              </view>
+              <view class="task-brief-require">
+                <text class="task-orange">3-4.5千/月</text>
+                <text>| 2年经验 |</text>
+                <text>大专以上</text>
+              </view>
+              <view class="task-company">
+                <view class="task-company-brief">
+                  <text class="task-company-name">上海电影股份有限公司影院管理分公司</text>
+                  <text class="task-company-address">宁波市鄞州区樟树街汉德城24层</text>
+                </view>
+                <view class="task-company-active">
+                  <text class="task-active-distance">0.5km</text>
+                </view>
+              </view>
+            </view>
+          </view>
+        </navigator>
+      </view>
+    </view>
   </view>
 </view>

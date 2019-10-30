@@ -51,24 +51,28 @@
     <!--企业介绍-->
     <text class="partitionTitle">企业简介</text>
     <view class="jobPartition">
-      <text class="companyProfile">均胜电子成立于2004年，企业初创时期就确立了同步设计理念，与客户同步,实时做出反应,随时解决客户问题。为前沿客户量身打造全方位解决方案,切实满足客户需求。2009年开始企业实施并购战略,创新产品升级改造途径，2009年并购上海华德,扩张并整合国内产品系。2011年并购德国普瑞，通过德国普瑞的海外并购，均胜电子让德国普瑞的创新能力和生产品质管控与中国公司的资金优势和市场资源互补，提前实现了全球化和转型升级战略目标。<text class="showMore" decode="{{true}}">&nbsp;&nbsp;...&nbsp;查看更多</text></text>
+      <text
+        class="companyProfile">均胜电子成立于2004年，企业初创时期就确立了同步设计理念，与客户同步,实时做出反应,随时解决客户问题。为前沿客户量身打造全方位解决方案,切实满足客户需求。2009年开始企业实施并购战略,创新产品升级改造途径，2009年并购上海华德,扩张并整合国内产品系。2011年并购德国普瑞，通过德国普瑞的海外并购，均胜电子让德国普瑞的创新能力和生产品质管控与中国公司的资金优势和市场资源互补，提前实现了全球化和转型升级战略目标。<text
+          class="showMore" decode="{{true}}">&nbsp;&nbsp;...&nbsp;查看更多</text></text>
 
-      <view class="companyCard">
-        <view class="cardContent">
-          <image class="cardImage" mode="widthFix" src="../../assets/images/logo.png"></image>
-          <view class="cardProfile">
-            <text class="cardTitle">宁波均胜电子集团</text>
-            <view class="starBox">
-              <image mode="widthFix" src="../../assets/images/star.png"></image>
-              <image mode="widthFix" src="../../assets/images/star.png"></image>
-              <image mode="widthFix" src="../../assets/images/star.png"></image>
-              <image mode="widthFix" src="../../assets/images/star.png"></image>
-              <image mode="widthFix" src="../../assets/images/star.png"></image>
+      <navigator url="../companyDetail/companyDetail">
+        <view class="companyCard">
+          <view class="cardContent">
+            <image class="cardImage" mode="widthFix" src="../../assets/images/logo.png"></image>
+            <view class="cardProfile">
+              <text class="cardTitle">宁波均胜电子集团</text>
+              <view class="starBox">
+                <image mode="widthFix" src="../../assets/images/star.png"></image>
+                <image mode="widthFix" src="../../assets/images/star.png"></image>
+                <image mode="widthFix" src="../../assets/images/star.png"></image>
+                <image mode="widthFix" src="../../assets/images/star.png"></image>
+                <image mode="widthFix" src="../../assets/images/star.png"></image>
+              </view>
+              <text class="cardTrait">民营 | 1000人</text>
             </view>
-            <text class="cardTrait">民营 | 1000人</text>
           </view>
         </view>
-      </view>
+      </navigator>
       <view class="company_locate">
         <view class="locate_address">
           <image mode="widthFix" class="locate_logo" src="../../assets/images/locate.png"></image>

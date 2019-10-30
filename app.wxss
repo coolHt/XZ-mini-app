@@ -60,3 +60,90 @@
   color: #b1b1b1;
   text-align: right;
 }
+/**职位列表**/
+.task-list {
+  width: 100%;
+}
+.s-task {
+  width: 100%;
+  box-sizing: border-box;
+  padding: 25rpx 20rpx;
+  border-bottom: 1px solid #ddd;
+  background: #fff;
+  display: flex;
+  justify-content: space-between;
+  /* align-items: flex-start; */
+}
+.task-logo {
+  display: block;
+  width: 16%;
+  height: auto;
+}
+.task-profile {
+  width: 80%;
+  margin-left: 15rpx;
+}
+.task-title {
+  display: block;
+  width: 70%;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-weight: bold;
+  font-size: 33rpx;
+  color: #333;
+}
+.task-brief-require .task-orange {
+  color: #fa7268;
+}
+.task-brief-require text {
+  font-size: 33rpx;
+  color: #b1b1b1;
+}
+.task-company {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+}
+.task-company-brief {
+  width: 80%;
+}
+
+.task-company-active {
+  width: 18%;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-end;
+}
+.task-active-day{
+  width: 30% !important;
+  font-size: 33rpx;
+  color: #b1b1b1;
+  display: block;
+}
+.task-company-name {
+  width: 100%;
+  display: block;
+  font-size: 28rpx;
+  color: #b1b1b1;
+  white-space: nowrap;
+  text-overflow: ellipsis;
+  overflow: hidden;
+}
+.task-active-distance,
+.task-company-address {
+  width: 100%;
+  display: block;
+  font-size: 25rpx;
+  color: #b1b1b1;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+}
+.task-active-day,
+.task-active-distance {
+  text-align: right;
+}
+.task-title-container{
+  display: 100%;
+  display: flex;
+}

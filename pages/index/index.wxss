@@ -21,11 +21,6 @@
   width: 80%;
   margin-left: 15rpx;
 }
-.task-title{
-  font-weight: bold;
-  font-size: 33rpx;
-  color: #333;
-}
 .task-brief-require .task-orange {
   color: #fa7268;
 }
@@ -40,19 +35,6 @@
 }
 .task-company-brief{
   width:80%;
-}
-.task-company-active{
-  width:18%;
-}
-.task-active-day,
-.task-company-name {
-  width: 100%;
-  display: block;
-  font-size: 28rpx;
-  color: #b1b1b1;
-  white-space: nowrap;
-  text-overflow: ellipsis;
-  overflow: hidden;
 }
 .task-active-distance, .task-company-address {
   width: 100%;

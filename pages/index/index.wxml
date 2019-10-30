@@ -103,7 +103,10 @@
       <view class="s-task">
         <image class="task-logo" mode="widthFix" src="../../assets/images/logo.png"></image>
         <view class="task-profile">
-          <text class="task-title">行政专员-前台</text>
+          <view class="task-title-container">
+            <text class="task-title">行政专员-前台</text>
+            <text class="task-active-day">6天前</text>
+          </view>
           <view class="task-brief-require">
             <text class="task-orange">3-4.5千/月</text>
             <text> | 2年经验 | </text>
@@ -115,7 +118,7 @@
               <text class="task-company-address">宁波市鄞州区樟树街汉德城24层</text>
             </view>
             <view class="task-company-active">
-              <text class="task-active-day">6天前</text>
+              
               <text class="task-active-distance">0.5km</text>
             </view>
           </view>
