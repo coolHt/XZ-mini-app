@@ -39,7 +39,9 @@ Page({
     inputInfo: '',
     count: 0,
     voicePath: '',
-
+    startPoint: 0,
+    moveDistance: 0,
+    clientH: 0
   },
 
 
@@ -47,16 +49,19 @@ Page({
    * 生命周期函数--监听页面加载
    */
   onLoad: function(options) {
+    //获取屏幕高度
+
     //this.handlPlayVocal()
     wx.getSystemInfo({
       success: res => {
         //设置map高度，根据当前设备宽高满屏显示
         this.setData({
           Width: res.windowWidth,
-          Height: res.windowHeight - 50
-        })
+          Height: res.windowHeight - 50,
+          clientH: res.windowHeight
+        });
       }
-    })
+    });
 
     wx.getLocation({
       type: 'gcj02', // 默认为 wgs84 返回 gps 坐标，gcj02 返回可用于 wx.openLocation 的坐标
@@ -366,6 +371,24 @@ Page({
         console.log(res);
       }
     })
+  },
+  //手指移动
+  touchUp: function (e){
+    var t = e.touches[0].clientY;
+    if (this.data.startPoint === 0) this.data.startPoint = t;
+    var distance = this.data.startPoint - t;
+    var distanceTop = this.data.clientH;
+    console.log(distanceTop - distance);
+    this.setData({
+      moveDistance: parseInt(distance),
+      clientH: distanceTop - distance < 10 ? 0 : distanceTop - distance
+    });
+    // console.log(this.data.moveDistance);
+    // console.log(this.data.clientH);
+  },
+  //放开手指
+  unwindTouch: function(e){
+    
   },
 
   /**
