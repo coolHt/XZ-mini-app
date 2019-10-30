@@ -1,7 +1,7 @@
 <view class="container">
   <custom-nav navTitle="企业介绍" pos="left"></custom-nav>
 
-  <view class="enterprise-container">
+  <view class="enterprise-container" style="margin-top:{{navInstance}}px;padding-top:40rpx;">
     <view class="enterprise-profile">
       <image src="../../assets/images/logo.png" mode="widthFix"></image>
       <view class="profile-inner">

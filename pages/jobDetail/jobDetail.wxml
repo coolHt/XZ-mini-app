@@ -2,7 +2,7 @@
   <!--这里是个组件-->
   <custom-nav navTitle="{{pageTitle}}"></custom-nav>
   <!---->
-  <view class="jobDetailContainer">
+  <view class="jobDetailContainer" style="margin-top:{{navInstance}}px;padding-top:40rpx;">
     <view class="jobPartition">
       <text class="detailJobTitle">外贸业务员+包住五险一金</text>
       <view class="salaryMount">

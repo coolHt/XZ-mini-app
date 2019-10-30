@@ -7,6 +7,12 @@ App({
     wx.setStorageSync('logs', logs)
   },
   onShow(){
+      var menuButton = wx.getMenuButtonBoundingClientRect();
+      this.globalData = {
+        navInstance: menuButton.height + menuButton.top
+      };
+      
+
     //授权获取当前地址
     const _this = this;
     wx.authorize({
@@ -40,5 +46,6 @@ App({
   },
   globalData: {
     userInfo: null,
+    navInstance: 0
   },
 });

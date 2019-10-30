@@ -2,10 +2,12 @@
 <view class="container">
   <view class="index-search">
     <view class="index-input-search">
-      <input type="text" placeholder="请输入要查找职位的关键词"></input>
+      <input type="text" value="{{searchField}}" placeholder="请输入要查找职位的关键词"  bindinput="watchSearch"></input>
       <view class="iconBox">
         <icon type="search" size="15"></icon>
       </view>
+      <!--清除按钮-->
+      <image wx:if="{{searchField || showClear}}" mode="widthFix" class="clearSearchField" src="../../assets/images/close.png" bindtap="clearSearch"></image>
     </view>
     <view class="user-avatar">
       <navigator url="../member/member">
@@ -34,7 +36,7 @@
       <image mode="widthFix" src="../../assets/images/arrow-right.png"></image>
     </view>
     <view class="recommendation-tags">
-      <view class="tag-item" wx:for="{{tags}}">{{item}}</view>
+      <view class="tag-item {{item.isSelected ? 'tagChecked' : ''}}" wx:for="{{tags}}" data-tag="{{item.name}}" data-index="{{index}}" bindtap="addSearchField">{{item.name}}</view>
       <view class="tag-toggle" wx:if="{{tags.length > 0}}">
         <image mode="widthFix" src="../../assets/images/refresh_b.png"></image>
         <text>换一批</text>

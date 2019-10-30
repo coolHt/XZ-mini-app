@@ -5,7 +5,8 @@ Page({
    * 页面的初始数据
    */
   data: {
-    pageTitle: '均胜电子' //自定义导航文字
+    pageTitle: '均胜电子', //自定义导航文字
+    navInstance: 0
   },
 
   /**
@@ -19,7 +20,10 @@ Page({
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-    
+    var app = getApp();
+    this.setData({
+      navInstance: app.globalData.navInstance,
+    });
   },
 
   /**

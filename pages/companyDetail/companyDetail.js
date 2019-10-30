@@ -21,7 +21,7 @@ Page({
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-
+    navInstance: 0
   },
 
   /**
@@ -29,6 +29,10 @@ Page({
    */
   onShow: function () {
     var _this = this;
+    var app = getApp();
+    this.setData({
+      navInstance: app.globalData.navInstance,
+    });
     wx.getLocation({
       isHighAccuracy: true,
       success: function(res){

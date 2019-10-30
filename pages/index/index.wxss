@@ -69,6 +69,12 @@
 }
 
 /**搜索框**/
+.clearSearchField{
+  position: absolute;
+  right: 10rpx;
+  top: 10rpx;
+  width: 60rpx;
+}
 .index-search{
   width:100%;
   display:flex;
@@ -79,7 +85,7 @@
 }
 .index-input-search{
   width: 87%;
-  height: 50rpx;
+  height: 50rpx; 
   position: relative;
 }
 .user-avatar{
@@ -103,7 +109,7 @@
   color: #333;
   height: 80rpx;
   box-sizing: border-box;
-  padding-left: 70rpx;
+  padding: 0 70rpx;
 }
 .index-input-search .iconBox {
   position: absolute;
@@ -201,13 +207,21 @@
 }
 .tag-toggle{
   display: inline-block;
+  height: 57rpx;
 }
 .tag-toggle image{
-  width: 30rpx;
+  width: 50rpx;
+  position: relative;
+  top: 12rpx;
 }
 .tag-toggle text{
+  line-height: 57rpx;
   font-size: 33rpx;
   color: #5f4b8b;
+}
+.recommendation-tags .tagChecked {
+  color: #fff;
+  background: #5f4b8b;
 }
 /****/
 /****/

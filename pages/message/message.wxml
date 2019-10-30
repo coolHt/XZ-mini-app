@@ -1,6 +1,6 @@
 <view class="container">
   <custom-nav navTitle="我的消息" pos="left"></custom-nav>
-  <view class="message-container">
+  <view class="message-container" style="margin-top:{{navInstance}}px;padding-top:40rpx;">
     <text class="message-title">全部消息通知</text>
     <view class="message-list">
       <view class="message-item">

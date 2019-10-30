@@ -5,7 +5,7 @@ Page({
    * 页面的初始数据
    */
   data: {
-
+    navInstance: 0
   },
 
   /**
@@ -19,7 +19,10 @@ Page({
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-
+    var app = getApp();
+    this.setData({
+      navInstance: app.globalData.navInstance,
+    });
   },
 
   /**

@@ -2,7 +2,7 @@
 <view class="container">
   <custom-nav navTitle="人才经纪人" pos="left"></custom-nav>
 
-  <view class="owner-adviser">
+  <view class="owner-adviser" style="margin-top:{{navInstance}}px;padding-top:40rpx;">
     <view class="adviser-shareCard">
       <text class="shareCard-title">邀请好友 共享福利</text>
       <text class="shareCard-introduction">每邀请1位新用户注册心职会员将归属您的名下</text>

@@ -1,6 +1,6 @@
 <view class="container">
   <custom-nav navTitle="我的" pos="left"></custom-nav>
-  <view class="member-container">
+  <view class="member-container" style="margin-top:{{navInstance}}px;padding-top:40rpx;">
     <view class="member-profile">
       <view class="member-avatar">
         <image src="../../assets/images/logo.png" mode="widthFix"></image>
@@ -31,6 +31,7 @@
         <text>全部</text>
       </view>
     </view>
+
     <!--工资单提醒-->
     <view class="member-serve check-salary">
       <text class="salaryText">九月第一周工资单已发放九月第一周工资单已发放九月第一周工资单已发放</text>
