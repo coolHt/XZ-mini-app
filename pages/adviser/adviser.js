@@ -1,13 +1,11 @@
-// pages/companyDetail/companyDetail.js
+// pages/adviser/adviser.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    switchType: '1',
-    longitudeNum: 0,
-    latitdueNum: 0
+
   },
 
   /**
@@ -28,16 +26,7 @@ Page({
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-    var _this = this;
-    wx.getLocation({
-      isHighAccuracy: true,
-      success: function(res){
-        _this.setData({
-          longitudeNum: res.longitude,
-          latitdueNum: res.latitude
-        });
-      }
-    });
+
   },
 
   /**
@@ -73,14 +62,5 @@ Page({
    */
   onShareAppMessage: function () {
 
-  },
-  //切换
-  switchTab: function(v){
-    var currentV = v.currentTarget.dataset;
-    if (this.data.switchType != currentV.vindex){
-      this.setData({
-        switchType: currentV.vindex
-      });
-    }
   }
-});
+})

@@ -13,6 +13,34 @@
       </navigator>
     </view>
   </view>
+  <!--当前所在位置-->
+  <view class="user-locate">
+    <view class="locate-content">
+      <image mode="widthFix" class="userLoacate" src="../../assets/images/user-locate.png"></image>
+      <text>浙江省宁波市鄞州区樟树街</text>
+      <image mode="widthFix" class="userLocateList" src="../../assets/images/arrow-right.png"></image>
+    </view>
+    <view class="enter-mapMode">
+      <navigator url="../mappage/mappage">
+        <text>返回地图模式</text>
+        <image src="../../assets/images/small_arrow.png"></image>
+      </navigator>
+    </view>
+  </view>
+  <!--推荐-->
+  <view class="recommendation">
+    <view class="recommendation-title">
+      <text>你可能感兴趣的岗位 ( 点击加入搜索 )</text>
+      <image mode="widthFix" src="../../assets/images/arrow-right.png"></image>
+    </view>
+    <view class="recommendation-tags">
+      <view class="tag-item" wx:for="{{tags}}">{{item}}</view>
+      <view class="tag-toggle" wx:if="{{tags.length > 0}}">
+        <image mode="widthFix" src="../../assets/images/refresh_b.png"></image>
+        <text>换一批</text>
+      </view>
+    </view>
+  </view>
 
   <!--筛选-->
   <view class="filter-list">

@@ -1,0 +1,42 @@
+<!--pages/adviser/adviser.wxml-->
+<view class="container">
+  <custom-nav navTitle="人才经纪人" pos="left"></custom-nav>
+
+  <view class="owner-adviser">
+    <view class="adviser-shareCard">
+      <text class="shareCard-title">邀请好友 共享福利</text>
+      <text class="shareCard-introduction">每邀请1位新用户注册心职会员将归属您的名下</text>
+      <text class="shareCard-introduction">终生有效, 如成功入职您将获得:</text>
+      <view class="adviser-wage">
+        <text class="wage">200</text>
+        <text class="wage-degree">元</text>
+      </view>
+      <text class="shareCard-introduction">现金红包</text>
+    </view>
+
+    <view class="indivation">
+      <text class="my-code">我的邀请码</text>
+      <text class="indivation-introduction">(长按复制发送给好友, 好友注册时填写)</text>
+      <view class="code-number">
+        <text>45269633</text>
+      </view>
+    </view>
+    <view class="wage-history">
+      <text class="message-title">获奖记录 (3)</text>
+      <view class="message-list">
+        <view class="message-item">
+          <text class="message-inner">您的好友【浅浅曦儿】已入职罗森, 您获得200元现金奖励。</text>
+          <text class="message-date">2019-01-16</text>
+        </view>
+        <view class="message-item">
+          <text class="message-inner">您的好友【深深】已入职均胜,  您获得200元现金奖励。</text>
+          <text class="message-date">2019-01-16</text>
+        </view>
+        <view class="message-item">
+          <text class="message-inner">您的好友【浅浅儿】已入职智士, 您获得200元现金奖励。</text>
+          <text class="message-date">2019-01-16</text>
+        </view>
+      </view>
+    </view>
+  </view>
+</view>

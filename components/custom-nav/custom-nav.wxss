@@ -1,8 +1,11 @@
 /* components/custom-nav.wxss */
 .custom-nav{
-  position: relative;
+  position: fixed;
+  top:0;
+  left:0;
+  background: #fff;
   width: 100%;
-  box-sizing: border-box;
+  padding-bottom: 10rpx;
 }
 .custom-nav-title{
   font-size: 38rpx;
@@ -18,9 +21,8 @@
 }
 .route-back{
   position: absolute;
-  padding:0 10px;
   left:0;
   top: 0; 
-  height: 100%;
+  box-sizing: border-box;
   transform: rotateZ(90deg);
 }

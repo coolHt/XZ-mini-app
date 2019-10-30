@@ -1,0 +1,72 @@
+/* pages/adviser/adviser.wxss */
+.owner-adviser{
+  width: 100%;
+  box-sizing: border-box;
+  padding: 40rpx 20px;
+}
+.adviser-shareCard{
+  width: 100%;
+  padding: 40rpx 0;
+  box-sizing: border-box;
+  border-radius: 10px;
+  background-image: linear-gradient(to bottom left, #6737ff, #639bfe);
+  box-shadow: #639bfe 0rpx 10rpx 40rpx 0rpx;
+}
+.adviser-wage{
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.wage{
+  font-size: 100rpx;
+  font-weight: bold;
+}
+.wage-degree{
+  font-size: 36rpx;
+  margin-left: 5rpx;
+}
+.adviser-shareCard text{
+  display: block;
+  color: #fff;
+}
+.shareCard-title{
+  font-weight: bold;
+  font-size: 40rpx;
+  text-align: center;
+  margin-bottom: 30rpx;
+}
+.shareCard-introduction{
+  font-size: 28rpx;
+  line-height: 40rpx; 
+  text-align: center;
+}
+.indivation{
+  margin: 80rpx 0;
+}
+.indivation text{
+  display: block;
+  text-align: center;
+}
+.my-code{
+  color: #333;
+  font-size: 40rpx;
+}
+.indivation-introduction {
+  font-size: 33rpx;
+  color: #b1b1b1;
+}
+.code-number{
+  text-align: center;
+}
+.code-number text {
+  margin-top: 40rpx;
+  display: inline-block;
+  color: #Fff;
+  font-size: 40rpx;
+  background-image: linear-gradient(to bottom left, #ff0a06, #ff8b0d);
+  box-shadow: #ff8b0d 0rpx 6rpx 20rpx 0rpx;
+  padding: 20rpx 50rpx;
+  border-radius: 5px;
+
+}

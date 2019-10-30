@@ -1,6 +1,6 @@
 <view class="container">
   <custom-nav navTitle="企业介绍" pos="left"></custom-nav>
-  
+
   <view class="enterprise-container">
     <view class="enterprise-profile">
       <image src="../../assets/images/logo.png" mode="widthFix"></image>
@@ -19,13 +19,23 @@
     <!---->
     <view class="switchTab">
       <view class="tab-item {{switchType == '1' ? 'activeItem' : ''}}" data-vindex='1' bindtap="switchTab">企业主页</view>
-      <view class="tab-item {{switchType == '2' ? 'activeItem' : ''}}" data-vindex='2' bindtap="switchTab">在招职位(12)</view>
+      <view class="tab-item {{switchType == '2' ? 'activeItem' : ''}}" data-vindex='2' bindtap="switchTab">在招职位(12)
+      </view>
     </view>
     <!--企业主页-->
-    <view wx:if="{{switchType == '1'}}" class="">
-      
+    <view wx:if="{{switchType == '1'}}" class="tabContainer">
+      <text class="introductionTitle">企业介绍</text>
+      <view class="introduction-partition">
+        <text
+          class="introduction-text">台州市雷博人力资源开发有限公司经营范围：劳动力中介服务，于2011-10-11经浙江相关工商管理机构正规注册设立，位于浙江省台州市椒江区君悦大厦B幢716室，多年来，台州市雷博人力资源开发有限公司以科学发展观为指导，深化改革，创新发展，企业实力不断提升。台州市雷博人力资源开发有限公司一直以稳定可靠的产品质量和良好的经营信誉，取得了广大客户的信任，紧随市场发展趋势，不断地开发新产品，以满足广大客户最新需求。所有的产品均已于通过内部质量标准。雄厚的技术力量，优质低价的产品，一流的营销售后服务，是您最佳的选择!</text>
+      </view>
+      <text class="introductionTitle">公司地址</text>
+      <text class="introduction-text">浙江省-台州市-椒江区浙江省台州市椒江区市府大道289号耀达大厦17层1707号</text>
+      <view>
+        <map class="mapStyle"  scale="30"  show-location="{{true}}" latitude="{{latitdueNum}}" longitude="{{longitudeNum}}"></map>
+      </view>
     </view>
     <!--在招职位-->
-    <view wx:else>在招职位</view>
+    <view wx:else class="tabContainer">在招职位</view>
   </view>
 </view>

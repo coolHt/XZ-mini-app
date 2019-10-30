@@ -8,11 +8,55 @@
 /**黑色: #333**/
 /**灰色: #b1b1b1**/
 /**深灰: #666666**/
-/**紫色: #5f4b8b**/
+/**紫外光色: #5f4b8b**/
 /**蓝色: #2f78ff**/
-/**橙色: #fba157**/
+/**珊瑚红: #fa7268**/
 /**阴影/边框: #ddd **/
 
 .container {
 } 
 
+/**消息列表**/
+.message-container {
+  width: 100%;
+  box-sizing: border-box;
+  margin-top: 30rpx;
+  padding: 20rpx 20px;
+}
+
+.message-title {
+  font-size: 40rpx;
+  font-weight: bold;
+  display: block;
+  width: 100%;
+}
+
+.message-list {
+  margin-top: 20rpx;
+}
+
+.message-item {
+  padding: 30rpx 0;
+  border-bottom: 1px solid #ddd;
+}
+
+.message-item text {
+  display: block;
+}
+
+.message-item .message-type {
+  font-size: 36rpx;
+  color: #2f78ff;
+}
+
+.message-item .message-inner {
+  margin: 20rpx 0;
+  font-size: 33rpx;
+  color: #333;
+}
+
+.message-item .message-date {
+  font-size: 28rpx;
+  color: #b1b1b1;
+  text-align: right;
+}

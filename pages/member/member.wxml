@@ -53,11 +53,11 @@
         </view>
       </navigator>
       
-      <navigator url="../index/index">
+      <navigator url="../adviser/adviser">
         <view class="member-functional">
           <view class="functional-title">
             <image src="../../assets/images/talent_icon.png"></image>
-            <text>人才经济</text>
+            <text>人才经纪</text>
           </view>
           <image class="gotoFunction" src="../../assets/images/arrow_down.png"></image>
         </view>

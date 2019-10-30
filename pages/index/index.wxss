@@ -27,7 +27,7 @@
   color: #333;
 }
 .task-brief-require .task-orange {
-  color: #fba157;
+  color: #fa7268;
 }
 .task-brief-require text{
   font-size:33rpx;
@@ -116,6 +116,100 @@
   align-items: center;
   justify-content: center;
 }
+/**当前所在位置**/
+.user-locate{
+  display: flex;
+  width: 100%;
+  padding: 30rpx 20rpx;
+  box-sizing: border-box;
+  justify-content: space-between;
+}
+.locate-content{
+  width: 60%;
+  display: flex;
+  align-items: center;
+}
+.locate-content image{
+  width:10%;
+  height:auto;
+}
+.locate-content text{
+  width: 82%;
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  font-size: 33rpx;
+  color: #333;
+  margin-right: 1%;
+}
+
+.locate-content .userLocateList {
+  width: 7%;
+  height: auto;
+  transform: rotateZ(90deg);
+}
+.enter-mapMode {
+  width: 35%;
+}
+.enter-mapMode navigator{
+  display: block;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: flex-end;
+}
+.enter-mapMode text{
+  color: #fa7268;
+  font-size: 33rpx;
+}
+.enter-mapMode image{
+  width: 30rpx;
+  height: 30rpx;
+}
+/**推荐**/
+.recommendation{
+  margin-bottom: 40rpx;
+}
+.recommendation-title {
+  display: flex;
+  width: 100%;
+  padding: 30rpx 20rpx;
+  box-sizing: border-box;
+  align-items: center;
+}
+.recommendation-title text {
+  font-size: 36rpx;
+  color: #333;
+}
+.recommendation-title image{
+  width: 4%;
+  margin-left: 2%;
+  transform: rotateZ(-90deg);
+}
+.recommendation-tags{
+  width: 100%;
+  box-sizing: border-box;
+  padding: 0 20rpx;
+}
+.tag-item{
+  display: inline-block;
+  padding: 12rpx;
+  background : #f6f6f6;
+  font-size: 33rpx;
+  color: #b1b1b1;
+  margin: 0 12rpx 12rpx 0;
+}
+.tag-toggle{
+  display: inline-block;
+}
+.tag-toggle image{
+  width: 30rpx;
+}
+.tag-toggle text{
+  font-size: 33rpx;
+  color: #5f4b8b;
+}
+/****/
 /****/
 /**筛选**/
 .filter-list{
@@ -195,7 +289,7 @@
 
 }
 .result-text .result-num {
-  color: #fba157;
+  color: #fa7268;
 }
 .searchDown{
   display: block;

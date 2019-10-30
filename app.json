@@ -1,8 +1,10 @@
 {
   "pages": [
-    "pages/companyDetail/companyDetail",
-    "pages/message/message",
     "pages/index/index",
+    "pages/mappage/mappage",
+    "pages/adviser/adviser",
+    "pages/message/message",
+    "pages/companyDetail/companyDetail",
     "pages/member/member",
     "pages/jobDetail/jobDetail",
     "pages/success/success",

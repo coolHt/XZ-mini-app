@@ -11,7 +11,7 @@
   font-weight: bold;
 }
 .salaryMount{
-  color: #fba157;
+  color: #fa7268;
   font-size: 33rpx;
   margin: 20rpx 0;
 }
@@ -53,11 +53,11 @@
   flex-wrap: wrap;
 }
 .profileTags .s_tag{
-  color: #fba157;
+  color: #fa7268;
   padding: 5rpx 8rpx;
   margin-bottom: 8rpx;
   margin-right: 8rpx;
-  border: 1px solid #fba157;
+  border: 1px solid #fa7268;
   font-size: 33rpx;
 }
 .partitionTitle{
@@ -154,8 +154,8 @@
   margin-right: 10rpx;
 }
 .company_locate .navigateBtn{
-  border:1px solid #fba157;
-  color: #fba157;
+  border:1px solid #fa7268;
+  color: #fa7268;
   padding: 10rpx 30rpx;
   border-radius: 60rpx;
   white-space: nowrap;

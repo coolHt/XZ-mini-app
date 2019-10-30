@@ -7,6 +7,7 @@ Page({
     motto: 'Hello World',
     userInfo: {},
     taskList:[1,1,1,1,1,1,1,1,1,1,1,1,1],
+    tags: ['保洁', '行政专员', '物业专享经理', '保洁主管', '保洁阿姨', '保安', '物业经理'],
     hasUserInfo: false,
     canIUse: wx.canIUse('button.open-type.getUserInfo'), //判断是否可以使用
     time: new Date().getFullYear(),

@@ -1,0 +1,196 @@
+/* pages/mappage/mappage.wxss */
+
+.btnMain {
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+  background: #1296db;
+  color: #fff;
+  height: 50px;
+  font-size: 18px;
+  font-weight: 600;
+  line-height: 50px;
+  padding: auto;
+}
+
+.btnLoc {
+  max-width: 30px;
+  max-height: 30px;
+  position: absolute;
+  bottom: 30px;
+  right: 0px;
+  background: rgba(255, 255, 255);
+  margin: 10px;
+  padding: 5px;
+  border-radius: 5px;
+  box-shadow: 2px 5px 5px #cdcdcd;
+}
+
+.btnList {
+  max-width: 30px;
+  max-height: 30px;
+  position: absolute;
+  bottom: 100px;
+  right: 0px;
+  background: rgba(255, 255, 255);
+  margin: 10px;
+  padding: 5px;
+  border-radius: 5px;
+  box-shadow: 2px 5px 5px #cdcdcd;
+}
+
+.btnVocal {
+  max-width: 30px;
+  max-height: 30px;
+  position: absolute;
+  right: 5px;
+  top: 5px;
+  background: rgba(255, 255, 255);
+  /* border-radius: 5px; *//* box-shadow: 2px 5px 5px #cdcdcd; */
+  border: none;
+}
+
+.btnPlayVocal {
+  max-width: 30px;
+  max-height: 30px;
+  position: absolute;
+  right: 50px;
+  top: 5px;
+  background: rgba(255, 255, 255);
+  border-radius: 5px;
+  box-shadow: 2px 5px 5px #cdcdcd;
+}
+
+.backView {
+  background: rgba(0, 0, 0, 0.5);
+  width: 100%;
+  height: 100%;
+}
+
+.item {
+  position: absolute;
+  bottom: -50px;
+  width: 100%;
+  height: 40%;
+  background: #fff;
+  border-radius: 4px;
+}
+
+.coverEntInf {
+  margin-left: 20rpx;
+  padding-top: 20rpx;
+  display: flex;
+}
+
+.coverJobInf {
+  margin-left: 20rpx;
+  padding-top: 34rpx;
+  display: flex;
+}
+
+.coverLogo {
+  width: 20%;
+  vertical-align: text-bottom;
+}
+
+.coverInf {
+  width: 50%;
+  vertical-align: text-bottom;
+}
+
+.coverOtherInf {
+  width: 30%;
+  vertical-align: text-bottom;
+}
+
+.entLogo {
+  width: 80px;
+  height: 80px;
+  border-radius: 4px;
+  border: none;
+}
+
+.entInfTitle {
+  display: block;
+  font-size: 32rpx;
+  color: #353535;
+  font-weight: 600;
+}
+
+.entInfSalary {
+  display: block;
+  font-size: 32rpx;
+  color: #e64340;
+  margin-top: 10rpx;
+}
+
+.entInfTags {
+  display: block;
+  font-size: 23rpx;
+  color: #1296db;
+  margin-top: 10rpx;
+}
+
+.tag {
+  display: inline-block;
+  margin-right: 5px;
+  padding: 5px 6px;
+  background: #f3f6ff;
+  border-radius: 4px;
+}
+
+.entInfLine {
+  display: block;
+  font-size: 25rpx;
+  color: #485150;
+  margin-top: 10rpx;
+}
+
+.entInfName {
+  display: inline-block;
+  margin-right: 5px;
+}
+
+.entInfAdd {
+  display: inline-block;
+}
+
+.entInfCount {
+  display: inline-block;
+  font-size: 25rpx;
+  color: #e64340;
+  margin-top: 8rpx;
+}
+
+.entInfDate {
+  display: inline-block;
+  font-size: 28rpx;
+  color: #485150;
+}
+
+.coverInput {
+  margin-top: 10px;
+  width: 85%;
+  height: 40px;
+  line-height: 40px;
+  border-radius: 4px;
+  background-color: rgba(255, 255, 255, 1);
+  position: relative;
+  left: 50%;
+  transform: translateX(-50%);
+  padding-left: 15rpx;
+  padding-right: 15rpx;
+  box-shadow: 2px 5px 5px #cdcdcd;
+}
+
+.text {
+  height: 40px;
+  line-height: 40px;
+}
+
+.input {
+  height: 40px;
+  line-height: 40px;
+  /* margin-top为text的高度，保持视觉上一致 */
+  margin-top: -40px;
+}

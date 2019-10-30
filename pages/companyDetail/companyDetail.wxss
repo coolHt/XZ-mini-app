@@ -55,3 +55,20 @@
   left:0;
   bottom:0;
 }
+.introductionTitle{
+  font-size: 36rpx;
+  font-weight: bold;
+  color: #333;
+  display: block;
+  margin: 30rpx 0 10px 0;
+}
+.introduction-text{
+  font-size: 33rpx;
+  line-height: 45rpx;
+}
+.introduction-partition {
+  margin-top: 20rpx;
+}
+.mapStyle{
+  width: 100%;
+}

@@ -1,0 +1,40 @@
+<view>
+  <input class='input' value='{{inputInfo}}' focus='{{inputFocus}}' bindblur='handlBlurInput'></input>
+  <map  longitude="{{longitude}}" latitude="{{latitude}}" circles="{{circles}}" scale="{{scale}}" markers="{{markers}}" data-markers="{{markers}}" bindmarkertap='handlShowCover' style='width:{{Width}}px;height:{{Height}}px'>
+
+    <cover-view class='coverInput' wx:if='{{!isShowCover}}'>
+      <cover-view bindtap='handlTapInput'>
+        <cover-view class='text'>{{inputInfo}}</cover-view>
+        
+      </cover-view>
+      <cover-image class='btnVocal' src="../../assets/images/phone.png" bindtap="handlChooseIsOpen"></cover-image>
+      <!-- <cover-image class='btnPlayVocal' src="../../assests/images/play.png" bindtap="handlPlayVocal"></cover-image> --></cover-view>
+    <cover-image class='btnLoc' src="../../assets/images/aim.png" bindtap="handlGetLoc"></cover-image>
+    <cover-image class='btnList' src="../../assets/images/list.png" bindtap="handlShowJobList"></cover-image>
+    <cover-view class="backView" wx:if='{{isShowCover}}' bindtap="handlCloseCover"></cover-view>
+    <cover-view class="item" wx:if='{{isShowCover}}'>
+      <cover-view class='coverJobInf'>
+        <cover-view class="coverLogo">
+          <cover-image src='{{entInf.logo}}' class="entLogo"></cover-image>
+          <cover-view class="entInfCount">共{{entInf.count}}个职位</cover-view>
+        </cover-view>
+        <cover-view class="coverInf">
+          <cover-view class='entInfTitle'>{{entInf.job}}</cover-view>
+          <cover-view class='entInfSalary'>{{entInf.salary}}</cover-view>
+          <cover-view class='entInfTags'>
+            <cover-view class='tag' wx:for='{{entInf.tag}}' wx:key='item'>{{item}}</cover-view>
+          </cover-view>
+          <cover-view class="entInfLine">
+            <cover-view class="entInfName">{{entInf.ent}}</cover-view>
+            <cover-view class="entInfAdd">{{entInf.add}}</cover-view>
+          </cover-view>
+        </cover-view>
+        <cover-view class="coverOtherInf">
+          <cover-view></cover-view>
+        </cover-view>
+      </cover-view>
+    </cover-view>
+  </map>
+</view>
+<button class='btnMain' wx:if='{{!isShowCover}}' bindtap="">一键请求职位</button>
+<button class='btnMain' wx:if='{{isShowCover}}' bindtap="">申请职位</button>
