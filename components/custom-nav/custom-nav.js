@@ -15,6 +15,10 @@ Component({
     hasUser: {//是否显示个人资料头像
       type: Boolean,
       value: false
+    },
+    hasLogo: { //是否显示logo
+      type: Boolean,
+      value: false
     }
   },
 

@@ -35,10 +35,14 @@ Page({
     }],
     markers: [],
     entInf: {},
-    inputInfo: '',
+    //inputInfo: '',
     count: 0,
     voicePath: '',
-    startPoint: 0
+    startPoint: 0,
+    //输入框
+    inputFocus: false, // input 框的focus状态
+    searchText: '', // input 框的输入内容
+    inputInfo: '搜索', // cover-view 显示的 input 的输入内容
   },
 
 
@@ -319,6 +323,18 @@ Page({
         console.log(res);
       }
     })
+  },
+  /**输入框**/
+  tapInput() {
+    this.setData({
+      inputInfo: '',
+      inputFocus: true
+    });
+  },
+  blurInput(val) {
+    this.setData({
+      inputInfo: val.detail.value || '搜索'
+    });
   },
 
   /**

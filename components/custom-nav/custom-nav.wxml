@@ -5,5 +5,8 @@
     <navigator url="../../pages/member/member">
       <image wx:if="{{user}}" bindtap="backupRoute" class="nav-user" src="../../assets/images/map_user.png" style="width:{{buttonHeight * 0.8}}px;height:{{buttonHeight * 0.8}}px;top:{{topSpace +  buttonHeight * 0.1}}px;left:{{buttonHeight * 0.2}}px"></image>
     </navigator>
-  <text class="custom-nav-title" style="padding-left: {{titlePos == 'center' ? '0' : buttonHeight + 20}}px">{{title}}</text>
+  <!--logo-->
+  <image wx:if="{{hasLogo}}" src="../../assets/images/brandLogo.png" mode="aspectFit" style="position:relative;height:{{buttonHeight * 0.7}}px;top:{{buttonHeight * 0.15}}px" class="navlogo"></image>
+  <!---->  
+  <text wx:if="{{!hasLogo}}" class="custom-nav-title" style="padding-left: {{titlePos == 'center' ? '0' : buttonHeight + 20}}px">{{title}}</text>
 </view>

@@ -1,8 +1,8 @@
 {
   "pages": [
     "pages/mappage/mappage",
-    "pages/adviser/adviser",
     "pages/an/an",
+    "pages/adviser/adviser",
     "pages/index/index",
     "pages/companyDetail/companyDetail",
     "pages/success/success",

@@ -172,8 +172,8 @@
 .coverInput {
   margin-top: 10px;
   width: 85%;
-  height: 40px;
-  line-height: 40px;
+  height: 90rpx;
+  line-height: 90rpx;
   border-radius: 4px;
   background-color: rgba(255, 255, 255, 1);
   position: relative;
@@ -185,15 +185,19 @@
 }
 
 .text {
-  height: 40px;
-  line-height: 40px;
+  height: 90rpx;
+  line-height: 90rpx;
 }
 
 .input {
-  height: 40px;
-  line-height: 40px;
+  height: 90rpx;
+  line-height: 90rpx;
+  width: 90%;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  margin: 0 auto;
   /* margin-top为text的高度，保持视觉上一致 */
-  margin-top: -40px;
+  
 }
 .dragUp{
   display: block;
@@ -201,4 +205,28 @@
   width: 60rpx;
   height: 60rpx;
   transform: rotateZ(-90deg);
+}
+
+/**输入框**/
+.input-info {
+  position: relative;
+  left: 7%;
+  top: 80rpx;
+  width: 85%;
+  height: 90rpx;
+  line-height: 90rpx;
+  background-color: #fff;
+  border-radius: 20px;
+  padding: 0px 15px;
+  color: #333;
+  box-sizing: border-box;
+  font-size: 33rpx;
+}
+
+.input-info .hide {
+  position: relative;
+  color: #333;
+  top: 26rpx;
+  line-height: 90rpx;
+  font-size: 33rpx;
 }

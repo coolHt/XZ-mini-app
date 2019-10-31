@@ -1,17 +1,20 @@
 <view>
-  <custom-nav navTitle="企业介绍" pos="center"  hasUser="{{true}}">
+  <custom-nav navTitle="企业介绍" pos="center"  hasUser="{{true}}" hasLogo="{{true}}">
   </custom-nav>
-  <input class='input' value='{{inputInfo}}' focus='{{inputFocus}}' bindblur='handlBlurInput'></input>
   <map longitude="{{longitude}}" latitude="{{latitude}}" circles="{{circles}}" scale="{{scale}}" markers="{{markers}}"
     data-markers="{{markers}}" bindmarkertap='handlShowCover' style='width:{{Width}}px;height:{{Height}}px;margin-top:{{navInstance}}px'>
 
-    <cover-view class='coverInput' wx:if='{{!isShowCover}}'>
+    <!-- <cover-view class='coverInput' wx:if='{{!isShowCover}}'>
       <cover-view bindtap='handlTapInput'>
         <cover-view class='text'>{{inputInfo}}</cover-view>
 
       </cover-view>
       <cover-image class='btnVocal' src="../../assets/images/phone.png" bindtap="handlChooseIsOpen"></cover-image>
-      <!-- <cover-image class='btnPlayVocal' src="../../assests/images/play.png" bindtap="handlPlayVocal"></cover-image> -->
+    </cover-view> -->
+        <!-- 输入框 -->
+    <cover-view class="input-info" bindtap="tapInput">
+      {{inputInfo}}
+      <input class="hide" value="{{searchText}}" focus="{{inputFocus}}" bindblur="blurInput"></input>
     </cover-view>
     <cover-image class='btnLoc' src="../../assets/images/aim.png" bindtap="handlGetLoc"></cover-image>
     <cover-image class='btnList' src="../../assets/images/list.png" bindtap="handlShowJobList"></cover-image>
