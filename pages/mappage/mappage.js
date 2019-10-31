@@ -13,11 +13,10 @@ const qqmapsdk = new QQMapWX({
 // const plugin = requirePlugin("WechatSI")
 // const manager = plugin.getRecordRecognitionManager()
 
-
-const print = console.debug
 // axios.defaults.adapter = mpAdapter
 Page({
   data: {
+    navInstance: 0,
     iconPath: "../../assets/images/location.png",
     isShowCover: false,
     isGetFocus: false,
@@ -39,9 +38,7 @@ Page({
     inputInfo: '',
     count: 0,
     voicePath: '',
-    startPoint: 0,
-    moveDistance: 0,
-    clientH: 0
+    startPoint: 0
   },
 
 
@@ -50,15 +47,13 @@ Page({
    */
   onLoad: function(options) {
     //获取屏幕高度
-
     //this.handlPlayVocal()
     wx.getSystemInfo({
       success: res => {
         //设置map高度，根据当前设备宽高满屏显示
         this.setData({
           Width: res.windowWidth,
-          Height: res.windowHeight - 50,
-          clientH: res.windowHeight
+          Height: res.windowHeight,
         });
       }
     });
@@ -134,7 +129,6 @@ Page({
     })
 
   },
-
 
   // 点击黑色背景关闭弹出层
   handlCloseCover: function(e) {
@@ -212,12 +206,12 @@ Page({
       height: 30,
       inf: {
         logo: 'https://zhishiimg.oss-cn-hangzhou.aliyuncs.com/1f5ac949-1a87-44db-8412-095d2506b689/1565842550293.jpg',
-        job: '测试职位1',
+        job: '罗森(世纪东方店)',
         salary: '3000 - 4000元/月',
         ent: '宁波市测试公司',
         tag: ['五险一金', '班车接送', '员工宿舍'],
         count: 13,
-        add: 'iuononoinoin',
+        add: '宁波市鄞州区惊驾路汉德城207',
         date: '07.14'
       }
     }, {
@@ -228,12 +222,11 @@ Page({
       height: 30,
       inf: {
         logo: 'https://zhishiimg.oss-cn-hangzhou.aliyuncs.com/1f5ac949-1a87-44db-8412-095d2506b689/1565842550293.jpg',
-        job: '测试职位2',
         salary: '3000 - 4000元/月',
-        ent: '测试企业2',
+        ent: '7-11(世纪东方店)',
         tag: ['五险一金', '班车接送', '员工宿舍'],
         count: 13,
-        add: 'iuononoinoin',
+        add: '宁波市鄞州区惊驾路汉德城207',
         date: '07.14'
       }
     }, {
@@ -244,12 +237,11 @@ Page({
       height: 30,
       inf: {
         logo: 'https://zhishiimg.oss-cn-hangzhou.aliyuncs.com/1f5ac949-1a87-44db-8412-095d2506b689/1565842550293.jpg',
-        job: '测试职位3',
         salary: '3000 - 4000元/月',
-        ent: '测试企业3',
+        ent: 'cole(世纪东方店)',
         tag: ['五险一金', '班车接送', '员工宿舍'],
         count: 13,
-        add: 'iuononoinoin',
+        add: '宁波市鄞州区惊驾路汉德城207',
         date: '07.14'
       }
     }, {
@@ -260,12 +252,11 @@ Page({
       height: 30,
       inf: {
         logo: 'https://zhishiimg.oss-cn-hangzhou.aliyuncs.com/1f5ac949-1a87-44db-8412-095d2506b689/1565842550293.jpg',
-        job: '测试职位4',
         salary: '3000 - 4000元/月',
-        ent: '测试企业4',
+        ent: '华联(世纪东方店)',
         tag: ['五险一金', '班车接送', '员工宿舍'],
         count: 13,
-        add: 'iuononoinoin',
+        add: '宁波市鄞州区惊驾路汉德城207',
         date: '07.14'
 
       }
@@ -290,49 +281,6 @@ Page({
       this.handlGetVocal()
     }
 
-  },
-
-  // 实现录音功能
-  handlGetVocal: function(e) {
-    manager.start()
-    // wx.startRecord({
-    //   success: (e) => {
-    //     this.setData({
-    //       voicePath: e.tempFilePath
-    //     })
-    //   }
-    // })
-  },
-
-  // 播放录音
-  handlPlayVocal: function(e) {
-    // wx.playVoice({
-    //   filePath: this.data.voicePath
-    // })
-    //有新的识别内容返回，则会调用此事件
-    manager.onRecognize = (res) => {
-      let text = res.result
-      this.setData({
-        inputInfo: text,
-      })
-    }
-    // 识别结束事件
-    manager.onStop = (res) => {
-      let text = res.result
-      if (text == '') {
-        // 用户没有说话，可以做一下提示处理...
-        return
-      }
-      this.setData({
-        inputInfo: text,
-      })
-    }
-  },
-
-  // 结束录音
-  handlStopVocal: function() {
-    // wx.stopRecord();
-    manager.stop()
   },
 
   // 将地址转化为经纬度
@@ -372,30 +320,15 @@ Page({
       }
     })
   },
-  //手指移动
-  touchUp: function (e){
-    var t = e.touches[0].clientY;
-    if (this.data.startPoint === 0) this.data.startPoint = t;
-    var distance = this.data.startPoint - t;
-    var distanceTop = this.data.clientH;
-    console.log(distanceTop - distance);
-    this.setData({
-      moveDistance: parseInt(distance),
-      clientH: distanceTop - distance < 10 ? 0 : distanceTop - distance
-    });
-    // console.log(this.data.moveDistance);
-    // console.log(this.data.clientH);
-  },
-  //放开手指
-  unwindTouch: function(e){
-    
-  },
 
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function() {
-
+    var app = getApp();
+    this.setData({
+      navInstance: app.globalData.navInstance,
+    });
   },
 
   /**

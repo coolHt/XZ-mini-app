@@ -1,4 +1,9 @@
-<view class="custom-nav {{titlePos == 'center'?'posCenter':'posLeft'}}" style="height: {{buttonHeight}}px;line-height: {{buttonHeight}}px;padding-top:{{topSpace}}px;" >
-  <image bindtap="backupRoute" class="route-back" src="../../assets/images/arrow_down.png" style="width:{{buttonHeight}}px;height:{{buttonHeight}}px;top:{{topSpace}}px"></image>
+<view class="custom-nav {{titlePos == 'center'?'posCenter':'posLeft'}}" style="height: {{buttonHeight}}px;line-height: {{buttonHeight}}px;padding-top:{{topSpace}}px;" >  
+    <!--返回按钮-->
+    <image wx:if="{{!user}}" bindtap="backupRoute" class="route-back" src="../../assets/images/arrow_down.png" style="width:{{buttonHeight}}px;height:{{buttonHeight}}px;top:{{topSpace}}px"></image>
+    <!--个人资料-->
+    <navigator url="../../pages/member/member">
+      <image wx:if="{{user}}" bindtap="backupRoute" class="nav-user" src="../../assets/images/map_user.png" style="width:{{buttonHeight * 0.8}}px;height:{{buttonHeight * 0.8}}px;top:{{topSpace +  buttonHeight * 0.1}}px;left:{{buttonHeight * 0.2}}px"></image>
+    </navigator>
   <text class="custom-nav-title" style="padding-left: {{titlePos == 'center' ? '0' : buttonHeight + 20}}px">{{title}}</text>
 </view>

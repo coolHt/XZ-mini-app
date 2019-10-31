@@ -1,79 +1,48 @@
-// pages/an/an.js
 Page({
-  /**
-   * 页面的初始数据
-   */
   data: {
-    animationData: {},
-    zIndex: 0
+    text: "Page animation",
+    animation: ''
   },
-
-  /**
-   * 生命周期函数--监听页面加载
-   */
   onLoad: function (options) {
-
+    // 页面初始化 options为页面跳转所带来的参数
   },
-
-  /**
-   * 生命周期函数--监听页面初次渲染完成
-   */
   onReady: function () {
-
+    // 页面渲染完成
+    //实例化一个动画
+    this.animation = wx.createAnimation({
+      duration: 1000,
+  
+      timingFunction: 'linear',
+      // 延迟多长时间开始
+      delay: 100,
+     
+      
+      success: function (res) {
+        console.log(res)
+      }
+    })
   },
 
   /**
-   * 生命周期函数--监听页面显示
+   * 旋转
    */
+  rotate: function () {
+    //顺时针旋转10度
+    //
+    this.animation.top(150).step()
+    this.setData({
+      //输出动画
+      animation: this.animation.export()
+    })
+  },
+
   onShow: function () {
-
+    // 页面显示
   },
-
-  /**
-   * 生命周期函数--监听页面隐藏
-   */
   onHide: function () {
-
+    // 页面隐藏
   },
-
-  /**
-   * 生命周期函数--监听页面卸载
-   */
   onUnload: function () {
-
-  },
-
-  /**
-   * 页面相关事件处理函数--监听用户下拉动作
-   */
-  onPullDownRefresh: function () {
-
-  },
-
-  /**
-   * 页面上拉触底事件的处理函数
-   */
-  onReachBottom: function () {
-
-  },
-
-  /**
-   * 用户点击右上角分享
-   */
-  onShareAppMessage: function () {
-
-  },
-  tapToggale: function(e){
-    console.log(e);
-    console.log(this.data.zIndex);
-    if (this.data.zIndex === 0){
-      this.setData({
-        zindex: 1,
-      });
-    }else{
-      this.setData({
-        zindex: 0,
-      });
-    }
-  },
-});
+    // 页面关闭
+  }
+})

@@ -1,11 +1,4 @@
-<view style="height:100rpx;background:#f5f5f5" bindtap="tapToggale">
+<view class="container">
+  <view animation="{{animation}}" class="view">我在做动画</view>
 </view>
-    <view class="testV  {{zindex == 1 ? 'fullHeight' : ''}}">
-      <view style="padding:30rpx 0">1</view>
-      <view style="padding:30rpx 0">1</view>
-      <view style="padding:30rpx 0">1</view>
-      <view style="padding:30rpx 0">1</view>
-      <view style="padding:30rpx 0">1</view>
-      <view style="padding:30rpx 0">1</view>
-      <view style="padding:30rpx 0">1</view>
-    </view>
+<button type="primary" bindtap="rotate">旋转</button>

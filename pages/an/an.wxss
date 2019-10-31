@@ -10,3 +10,7 @@
 .fullHeight{
   height: auto;
 }
+.view{
+  position: fixed;
+  top:10px;
+}

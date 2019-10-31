@@ -1,12 +1,13 @@
 {
   "pages": [
     "pages/mappage/mappage",
+    "pages/adviser/adviser",
+    "pages/an/an",
     "pages/index/index",
     "pages/companyDetail/companyDetail",
     "pages/success/success",
     "pages/jobDetail/jobDetail",
     "pages/message/message",
-    "pages/adviser/adviser",
     "pages/member/member",
     "pages/logs/logs"
   ],

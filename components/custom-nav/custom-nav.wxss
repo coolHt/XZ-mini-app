@@ -26,3 +26,9 @@
   box-sizing: border-box;
   transform: rotateZ(90deg);
 }
+.nav-user{
+position: absolute;
+left:0;
+top: 0;
+box-sizing: border-box;
+}

@@ -11,6 +11,10 @@ Component({
     pos: { //文字位置
       type: String,
       value: 'center', //值left/center
+    },
+    hasUser: {//是否显示个人资料头像
+      type: Boolean,
+      value: false
     }
   },
 
@@ -23,12 +27,14 @@ Component({
     topSpace: 0, //按钮距离顶部的位置
     buttonHeight: 0,  //按钮的高度,
     title: '',
-    titlePos: ''
+    titlePos: '',
+    user: false
   },
 
   //生命周期
   lifetimes: {
     attached: function(){
+      var hasUser = this.properties.hasUser;
       var menuButton = wx.getMenuButtonBoundingClientRect();
       var _this = this;
       wx.getSystemInfo({
@@ -39,7 +45,8 @@ Component({
             topSpace: menuButton.top,
             buttonHeight: menuButton.height,
             title: _this.properties.navTitle,
-            titlePos: _this.properties.pos
+            titlePos: _this.properties.pos,
+            user: hasUser ? true : false
           });
         }
       }); 
