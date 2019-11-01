@@ -32,7 +32,8 @@ Component({
     buttonHeight: 0,  //按钮的高度,
     title: '',
     titlePos: '',
-    user: false
+    user: false,
+    link: true
   },
 
   //生命周期
@@ -40,6 +41,11 @@ Component({
     attached: function(){
       var hasUser = this.properties.hasUser;
       var menuButton = wx.getMenuButtonBoundingClientRect();
+      if (getCurrentPages().length < 2){
+        this.setData({
+          link: false
+        });
+      }
       var _this = this;
       wx.getSystemInfo({
         success: function(res){

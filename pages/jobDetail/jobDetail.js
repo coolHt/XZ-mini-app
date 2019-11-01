@@ -7,7 +7,22 @@ Page({
   data: {
     pageTitle: '均胜电子', //自定义导航文字
     navInstance: 0,
-    isAnonymity: true
+    stars: [{
+      label: 0,
+      isSelected: false,
+    }, {
+      label: 1,
+      isSelected: false,
+    }, {
+      label: 2,
+      isSelected: false,
+    }, {
+      label: 3,
+      isSelected: false,
+    }, {
+      label: 4,
+      isSelected: false,
+    }]
   },
 
   /**
@@ -68,8 +83,16 @@ Page({
   onShareAppMessage: function () {
 
   },
+  //点星评价
   clickStar: function(e){
     var zIndex = e.currentTarget.dataset.index;
-    console.log(zIndex);
-  }
+    var stars = this.data.stars;
+    for (let i = 0; i < stars.length; i++) {
+      i <= zIndex ? stars[i].isSelected = true : stars[i].isSelected = false;
+    }
+    this.setData({
+      stars: stars
+    });
+  },
+  
 });

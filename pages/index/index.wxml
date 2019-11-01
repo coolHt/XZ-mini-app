@@ -1,6 +1,8 @@
 <!--index.wxml-->
 <view class="container">
-  <view class="index-search">
+  <!--这里是个组件-->
+  <custom-nav navTitle="找工作"></custom-nav>
+  <view class="index-search" style="margin-top:{{navInstance}}px;padding-top:40rpx;">
     <view class="index-input-search">
       <input type="text" value="{{searchField}}" placeholder="请输入要查找职位的关键词"  bindinput="watchSearch"></input>
       <view class="iconBox">

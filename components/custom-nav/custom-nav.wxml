@@ -1,6 +1,6 @@
 <view class="custom-nav {{titlePos == 'center'?'posCenter':'posLeft'}}" style="height: {{buttonHeight}}px;line-height: {{buttonHeight}}px;padding-top:{{topSpace}}px;" >  
     <!--返回按钮-->
-    <image wx:if="{{!user}}" bindtap="backupRoute" class="route-back" src="../../assets/images/arrow_down.png" style="width:{{buttonHeight}}px;height:{{buttonHeight}}px;top:{{topSpace}}px"></image>
+    <image wx:if="{{!user && link}}" bindtap="backupRoute" class="route-back" src="../../assets/images/arrow_down.png" style="width:{{buttonHeight}}px;height:{{buttonHeight}}px;top:{{topSpace}}px"></image>
     <!--个人资料-->
     <navigator url="../../pages/member/member">
       <image wx:if="{{user}}" class="nav-user" src="../../assets/images/map_user.png" style="width:{{buttonHeight * 0.7}}px;height:{{buttonHeight * 0.7}}px;top:{{topSpace +  buttonHeight * 0.15}}px;left:{{buttonHeight * 0.5}}px"></image>

@@ -7,6 +7,7 @@ Page({
     searchField: '', //搜索框文字
     showClear: false, //清除按钮
     userInfo: {},
+    navInstance: 0,
     taskList:[1,1,1,1,1,1,1,1,1,1,1,1,1],
     tags: [{
       name: '保洁',
@@ -54,6 +55,10 @@ Page({
     });
   },
   onLoad: function () {
+    var app = getApp();
+    this.setData({
+      navInstance: app.globalData.navInstance,
+    });
     
   },
   onChange(event) {

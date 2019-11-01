@@ -53,15 +53,8 @@
       <view style="display:flex;align-item:center;">
         <text class="partitionTitle">职位评价</text>
         <view class="stars">
-          <image src="../../assets/images/unlike.png" mode="widthFix" bindtap="clickStar" data-index="1"></image>
-          <image src="../../assets/images/unlike.png" mode="widthFix" bindtap="clickStar" data-index="2"></image>
-          <image src="../../assets/images/unlike.png" mode="widthFix" bindtap="clickStar" data-index="3"></image>
-          <image src="../../assets/images/unlike.png" mode="widthFix" bindtap="clickStar" data-index="4"></image>
-          <image src="../../assets/images/unlike.png" mode="widthFix" bindtap="clickStar" data-index="5"></image>
+          <image src="{{item.isSelected ? '../../assets/images/like_job.png' :'../../assets/images/unlike.png'}}" mode="widthFix" bindtap="clickStar" data-index="{{item.label}}" wx:for="{{stars}}"></image>
         </view>
-      </view>
-      <view class="anonymity {{isAnonymity ? 'anonymitySelected' : ''}}" bindtap="selectedAnonymity">
-        <text>匿名</text>
       </view>
     </view>
 

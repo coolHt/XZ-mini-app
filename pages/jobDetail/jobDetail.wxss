@@ -199,21 +199,10 @@
   width: 60rpx;
   margin-right: 10rpx;
 }
-.anonymity{
-  display: flex;
-  align-items: center;
-}
-.anonymity text {
-  font-size: 33rpx;
-  color: #b1b1b1;
-}
 
 .gradeJob{
   display: block;
   width: 100%;
   color: #333;
   font-size: 36rpx;
-}
-.anonymitySelected text{
-  color: #2f78ff;
 }

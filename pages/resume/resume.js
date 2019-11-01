@@ -1,13 +1,11 @@
-// pages/companyDetail/companyDetail.js
+// pages/resume/resume.js
 Page({
 
   /**
    * 页面的初始数据
    */
   data: {
-    switchType: '1',
-    longitudeNum: 0,
-    latitdueNum: 0,
+    navInstance: 0
   },
 
   /**
@@ -21,27 +19,17 @@ Page({
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function () {
-    navInstance: 0
+    var app = getApp();
+    this.setData({
+      navInstance: app.globalData.navInstance,
+    });
   },
 
   /**
    * 生命周期函数--监听页面显示
    */
   onShow: function () {
-    var _this = this;
-    var app = getApp();
-    this.setData({
-      navInstance: app.globalData.navInstance,
-    });
-    wx.getLocation({
-      isHighAccuracy: true,
-      success: function(res){
-        _this.setData({
-          longitudeNum: res.longitude,
-          latitdueNum: res.latitude
-        });
-      }
-    });
+
   },
 
   /**
@@ -77,14 +65,5 @@ Page({
    */
   onShareAppMessage: function () {
 
-  },
-  //切换
-  switchTab: function(v){
-    var currentV = v.currentTarget.dataset;
-    if (this.data.switchType != currentV.vindex){
-      this.setData({
-        switchType: currentV.vindex
-      });
-    }
   }
-});
+})

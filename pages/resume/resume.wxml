@@ -1,0 +1,7 @@
+<view class="container">
+  <!--这里是个组件-->
+  <custom-nav navTitle="个人资料"></custom-nav>
+  <view class="resume-container" style="margin-top:{{navInstance}}px;padding-top:40rpx;">
+    hello resume
+  </view>
+</view>
