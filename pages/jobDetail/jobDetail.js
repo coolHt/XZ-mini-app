@@ -6,7 +6,8 @@ Page({
    */
   data: {
     pageTitle: '均胜电子', //自定义导航文字
-    navInstance: 0
+    navInstance: 0,
+    isAnonymity: true
   },
 
   /**
@@ -66,5 +67,9 @@ Page({
    */
   onShareAppMessage: function () {
 
+  },
+  clickStar: function(e){
+    var zIndex = e.currentTarget.dataset.index;
+    console.log(zIndex);
   }
-})
+});

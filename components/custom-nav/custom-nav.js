@@ -68,8 +68,13 @@ Component({
         wx.navigateBack({
           delta: 1
         });
-      }
-      
+      } 
+    },
+    routeUser(){
+      console.log(1);
+      wx.navigateTo({
+        url: '../../pages/member/member'
+      })
     }
   }
 });

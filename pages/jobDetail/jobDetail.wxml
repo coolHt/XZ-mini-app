@@ -48,13 +48,29 @@
     <view class="jobPartition">
       <text class="job_brief_text">任职资格: \n 知识: \n 教育背景: \n 技能: \n </text>
     </view>
+    <!--职位评分-->
+    <view class="gradeStar">
+      <view style="display:flex;align-item:center;">
+        <text class="partitionTitle">职位评价</text>
+        <view class="stars">
+          <image src="../../assets/images/unlike.png" mode="widthFix" bindtap="clickStar" data-index="1"></image>
+          <image src="../../assets/images/unlike.png" mode="widthFix" bindtap="clickStar" data-index="2"></image>
+          <image src="../../assets/images/unlike.png" mode="widthFix" bindtap="clickStar" data-index="3"></image>
+          <image src="../../assets/images/unlike.png" mode="widthFix" bindtap="clickStar" data-index="4"></image>
+          <image src="../../assets/images/unlike.png" mode="widthFix" bindtap="clickStar" data-index="5"></image>
+        </view>
+      </view>
+      <view class="anonymity {{isAnonymity ? 'anonymitySelected' : ''}}" bindtap="selectedAnonymity">
+        <text>匿名</text>
+      </view>
+    </view>
+
     <!--企业介绍-->
     <text class="partitionTitle">企业简介</text>
     <view class="jobPartition">
       <text
         class="companyProfile">均胜电子成立于2004年，企业初创时期就确立了同步设计理念，与客户同步,实时做出反应,随时解决客户问题。为前沿客户量身打造全方位解决方案,切实满足客户需求。2009年开始企业实施并购战略,创新产品升级改造途径，2009年并购上海华德,扩张并整合国内产品系。2011年并购德国普瑞，通过德国普瑞的海外并购，均胜电子让德国普瑞的创新能力和生产品质管控与中国公司的资金优势和市场资源互补，提前实现了全球化和转型升级战略目标。<text
           class="showMore" decode="{{true}}">&nbsp;&nbsp;...&nbsp;查看更多</text></text>
-
       <navigator url="../companyDetail/companyDetail">
         <view class="companyCard">
           <view class="cardContent">

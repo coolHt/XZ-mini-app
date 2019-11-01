@@ -177,3 +177,43 @@
   left:0;
   border-radius: 0;
 }
+.gradeStar {
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  border-bottom: 1px solid #ddd;
+  box-sizing: border-box;
+  padding: 10rpx 20rpx 10rpx 0;
+  align-items: center;
+}
+.gradeStar .partitionTitle{
+  width: auto;
+  border-bottom: 0;
+  display: inline-block;
+}
+.stars{
+  display: inline-block;
+  padding: 30rpx 0;
+}
+.stars image {
+  width: 60rpx;
+  margin-right: 10rpx;
+}
+.anonymity{
+  display: flex;
+  align-items: center;
+}
+.anonymity text {
+  font-size: 33rpx;
+  color: #b1b1b1;
+}
+
+.gradeJob{
+  display: block;
+  width: 100%;
+  color: #333;
+  font-size: 36rpx;
+}
+.anonymitySelected text{
+  color: #2f78ff;
+}

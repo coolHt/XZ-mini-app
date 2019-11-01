@@ -12,18 +12,19 @@
   line-height: 50px;
   padding: auto;
 }
-
-.btnLoc {
-  max-width: 30px;
-  max-height: 30px;
-  position: absolute;
-  bottom: 30px;
-  right: 0px;
-  background: rgba(255, 255, 255);
-  margin: 10px;
-  padding: 5px;
-  border-radius: 5px;
+.locContainer{
   box-shadow: 2px 5px 5px #cdcdcd;
+  border-radius: 5px;
+  position:absolute;
+  right:20rpx;
+  background:#fff;
+  margin: 10px;
+  z-index:20;
+  padding: 8rpx;
+  border-radius: 5px;
+}
+.btnLoc {
+  width: 70rpx;
 }
 
 .btnList {
@@ -37,6 +38,7 @@
   padding: 5px;
   border-radius: 5px;
   box-shadow: 2px 5px 5px #cdcdcd;
+  z-index: 20;
 }
 
 .btnVocal {
@@ -61,18 +63,19 @@
   box-shadow: 2px 5px 5px #cdcdcd;
 }
 
-.backView {
-  background: rgba(0, 0, 0, 0.5);
+/* .backView {
   width: 100%;
   height: 100%;
-}
+} */
 
 .item {
   position: absolute;
-  bottom: 0;
-  width: 100%;
+  top: 50rpx;
+  left: 5%;
+  width: 90%;
   background: #fff;
-  padding: 30rpx 0 60rpx 0;
+  padding: 60rpx 0 60rpx 0;
+  border-radius: 10px;
 }
 
 .coverEntInf {
@@ -85,7 +88,7 @@
   padding-top: 34rpx;
   width: 100%;
   box-sizing: border-box;
-  padding: 0 50rpx;
+  padding: 0 30rpx;
   justify-content: space-between;
 }
 
@@ -209,9 +212,9 @@
 
 /**输入框**/
 .input-info {
-  position: relative;
+  position: absolute;
   left: 7%;
-  top: 80rpx;
+  top: 40rpx;
   width: 85%;
   height: 90rpx;
   line-height: 90rpx;
@@ -229,4 +232,28 @@
   top: 26rpx;
   line-height: 90rpx;
   font-size: 33rpx;
+}
+
+.findMore{
+  position: absolute;
+  width: 100%;
+  bottom: 10%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 30rpx 0;
+}
+.moreContainer{
+  display: flex;
+  background: #333;
+  border-radius: 30px;
+  padding: 35rpx 20%;
+}
+.findMore cover-view{
+  color: #fff;
+  font-size: 40rpx;
+}
+.findMore cover-image{
+  width: 46rpx;
+  margin: 0 10rpx;
 }

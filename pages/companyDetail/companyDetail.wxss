@@ -2,7 +2,7 @@
 .enterprise-container {
   width: 100%;
   box-sizing: border-box;
-  padding: 20px;
+  padding: 20px 20px 0 20px;
 }
 .enterprise-profile{
   width: 100%;
@@ -66,12 +66,16 @@
   font-size: 33rpx;
   line-height: 45rpx;
 }
-.introduction-partition {
-  margin-top: 20rpx;
-}
 .mapStyle{
   width: 100%;
+  height: 400rpx;
 }
 .companyTask{
-  margin-top: 40rpx;
+  padding: 20rpx 20px;
+}
+.tabPadding{
+  padding:0 20px;
+}
+.tabContainer{
+  padding-bottom:40rpx;
 }

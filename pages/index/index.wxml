@@ -30,7 +30,7 @@
     </view>
   </view>
   <!--推荐-->
-  <view class="recommendation">
+  <!-- <view class="recommendation">
     <view class="recommendation-title">
       <text>你可能感兴趣的岗位 ( 点击加入搜索 )</text>
       <image mode="widthFix" src="../../assets/images/arrow-right.png"></image>
@@ -42,7 +42,7 @@
         <text>换一批</text>
       </view>
     </view>
-  </view>
+  </view> -->
 
   <!--筛选-->
   <view class="filter-list">

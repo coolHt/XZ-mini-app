@@ -42,7 +42,7 @@ Page({
     //输入框
     inputFocus: false, // input 框的focus状态
     searchText: '', // input 框的输入内容
-    inputInfo: '搜索', // cover-view 显示的 input 的输入内容
+    inputInfo: '搜索附近的职位', // cover-view 显示的 input 的输入内容
   },
 
 
@@ -336,14 +336,29 @@ Page({
       inputInfo: val.detail.value || '搜索'
     });
   },
-
+  tapType(){
+    this.setData({
+      isShowCover: false
+    });
+  },
+  //企业卡片跳转
+  jumpRoute(){
+    wx.navigateTo({
+      url: '../companyDetail/companyDetail'
+    });
+  },
+  routeList(){
+    wx.navigateTo({
+      url: '../index/index'
+    });
+  },
   /**
    * 生命周期函数--监听页面初次渲染完成
    */
   onReady: function() {
     var app = getApp();
     this.setData({
-      navInstance: app.globalData.navInstance,
+      navInstance: app.globalData.navInstance + 5,
     });
   },
 

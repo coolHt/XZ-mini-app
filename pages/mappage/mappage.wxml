@@ -2,7 +2,7 @@
   <custom-nav navTitle="企业介绍" pos="center"  hasUser="{{true}}" hasLogo="{{true}}">
   </custom-nav>
   <map longitude="{{longitude}}" latitude="{{latitude}}" circles="{{circles}}" scale="{{scale}}" markers="{{markers}}"
-    data-markers="{{markers}}" bindmarkertap='handlShowCover' style='width:{{Width}}px;height:{{Height}}px;margin-top:{{navInstance}}px'>
+    data-markers="{{markers}}" bindmarkertap='handlShowCover' style='width:{{Width}}px;height:{{Height}}px;margin-top:{{navInstance}}px' bindtap="tapType">
 
     <!-- <cover-view class='coverInput' wx:if='{{!isShowCover}}'>
       <cover-view bindtap='handlTapInput'>
@@ -16,12 +16,12 @@
       {{inputInfo}}
       <input class="hide" value="{{searchText}}" focus="{{inputFocus}}" bindblur="blurInput"></input>
     </cover-view>
-    <cover-image class='btnLoc' src="../../assets/images/aim.png" bindtap="handlGetLoc"></cover-image>
-    <cover-image class='btnList' src="../../assets/images/list.png" bindtap="handlShowJobList"></cover-image>
-    <cover-view class="backView" wx:if='{{isShowCover}}' bindtap="handlCloseCover"></cover-view>
-    <navigator url="../companyDetail/companyDetail">
-      <cover-view class="item" wx:if='{{isShowCover}}' bindtap="touchUp">
-        <cover-image class="dragUp" src="../../assets/images/arrow-right.png"></cover-image>
+    <cover-view class="locContainer" style="bottom:{{navInstance + 70}}px;">
+
+    <cover-image class='btnLoc' src="../../assets/images/aim.png" mode="widthFix" bindtap="handlGetLoc" style="bottom:{{navInstance + 100}}px"></cover-image>
+    </cover-view>
+    <!-- <cover-image class='btnList' src="../../assets/images/list.png" bindtap="handlShowJobList" style="bottom:{{navInstance + 70}}px"></cover-image> -->
+      <cover-view class="item" wx:if='{{isShowCover}}'  bindtap="jumpRoute">
         <cover-view class="coverCompany">
           <cover-view class='coverJobInf'>
             <cover-view class="coverInf">
@@ -43,7 +43,14 @@
           </cover-view>
         </cover-view>
       </cover-view>
-    </navigator>
+
+      <cover-view class="findMore">
+        <cover-view class="moreContainer" bindtap="routeList">
+          <cover-view>我要</cover-view>
+        <cover-image src="../../assets/images/like_job.png" mode="widthFix"></cover-image>
+        <cover-view>工作</cover-view>
+        </cover-view>
+      </cover-view>
   </map>
 </view>
 <!-- <button class='btnMain' wx:if='{{!isShowCover}}' bindtap="">一键请求职位</button>

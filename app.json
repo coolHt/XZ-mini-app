@@ -1,12 +1,12 @@
 {
   "pages": [
     "pages/mappage/mappage",
+    "pages/companyDetail/companyDetail",
+    "pages/jobDetail/jobDetail",
     "pages/an/an",
     "pages/adviser/adviser",
     "pages/index/index",
-    "pages/companyDetail/companyDetail",
     "pages/success/success",
-    "pages/jobDetail/jobDetail",
     "pages/message/message",
     "pages/member/member",
     "pages/logs/logs"
