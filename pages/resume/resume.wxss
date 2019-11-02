@@ -1,1 +1,58 @@
 /* pages/resume/resume.wxss */
+.resume-container{
+  width: 100%;
+  padding-left: 20px;
+  padding-right: 20px;
+  box-sizing: border-box;
+}
+.resume-avatar{
+  width: 100%;
+  padding: 30rpx 0; 
+  text-align: center;
+}
+.resume-avatar image{
+  display: block;
+  margin: 0 auto;
+  width:180rpx;
+  height:auto;
+  border:2px solid #b1b1b1;
+  border-radius: 50%;
+}
+.resume-avatar text{
+  color: #b1b1b1;
+  margin-top: 25rpx;
+  font-size: 28rpx;
+  font-weight: bold;
+}
+.resume-field-name{
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-size: 33rpx;
+  color: #b1b1b1;
+  transition: all 0.2s linear;
+}
+.resume-input{
+  font-size: 33rpx;
+  color: #333;
+  text-align: center;
+  width: 80%;
+  display: block;
+  margin: 30rpx auto 0 auto;
+}
+.input-name{
+  display: none;
+}
+.selectedField .input-name{
+  display: block;
+}
+.selectedField .filled{
+  display: none;
+}
+.selectedField .resume-field-name {
+  font-size: 25rpx;
+}
+.resume-field{
+  border-bottom: 1px solid #ddd;
+  padding: 50rpx 0;
+}

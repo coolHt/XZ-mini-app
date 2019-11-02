@@ -5,7 +5,12 @@ Page({
    * 页面的初始数据
    */
   data: {
-    navInstance: 0
+    navInstance: 0,
+    inputType: '',
+    foucsType: '',
+    resumeName: '',
+    resumeGender: '',
+    resumePhone: ''
   },
 
   /**
@@ -65,5 +70,24 @@ Page({
    */
   onShareAppMessage: function () {
 
+  },
+  //点击输入字段
+  inputField: function(e){
+    var _this = this; 
+     this.setData({
+       inputType: e.currentTarget.dataset.partition
+     });
+     setTimeout(function(){
+       _this.setData({
+         foucsType: e.currentTarget.dataset.partition
+       });
+     },210);
+  },
+  //移除时重置状态
+  initFoucs: function(e){
+    this.setData({
+      inputType: ''
+    });
+    console.log(this.data.inputType);
   }
-})
+});

@@ -2,6 +2,23 @@
   <!--这里是个组件-->
   <custom-nav navTitle="个人资料"></custom-nav>
   <view class="resume-container" style="margin-top:{{navInstance}}px;padding-top:40rpx;">
-    hello resume
+    <view class="resume-avatar">
+      <image mode="widthFix" src="../../assets/images/logo.png"></image>
+      <text>点击修改头像</text>
+    </view>
+    <view class="resume-field {{inputType == 'name' ? 'selectedField' : ''}}" bindtap="inputField" data-partition="name">
+      <text class="resume-field-name">真实姓名</text>
+      <text class="filled">{{resumeName}}</text>
+      <input bindblur="initFoucs" focus="{{foucsType == 'name' ? true : false}}" value="{{resumeName}}" type="text" class="input-name resume-input"></input>
+    </view>
+    <view class="resume-field {{inputType == 'gender' ? 'selectedField' : ''}}" data-partition="gender" bindtap="inputField">
+      <text class="resume-field-name">性别</text>
+      <text class="filled">{{resumeGender}}</text>
+      <input bindblur="initFoucs" focus="{{foucsType == 'gender' ? true : false}}" value="{{resumeGender}}" type="text" class="input-name resume-input"></input>
+    </view>
+    <view class="resume-field {{inputType == 'phone' ? 'selectedField' : ''}}" data-partition="phone"  bindtap="inputField">
+      <text class="resume-field-name">手机号</text>
+      <input bindblur="initFoucs" focus="{{foucsType == 'phone' ? true : false}}" value="{{resumePhone}}" type="text" class="input-name resume-input"></input>
+    </view>
   </view>
 </view>
