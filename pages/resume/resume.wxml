@@ -45,6 +45,7 @@
         <input disabled="{{true}}" bindtap="selectedArray" class="briefValue" type="text" placeholder="请选择" value="{{resumeWorks}}" data-select="workTime"></input>
       </view>
     </view>
+    <van-action-sheet style="height:200rpx;" title="{{selectTitle}}" round="{{false}}" show="{{ show }}" actions="{{  selectAction }}" bind:close="onClose" bind:select="onSelect" />
 
     <view class="save_profile inforDisabled" bindtap="saveProfile">保存</view>
   </view>

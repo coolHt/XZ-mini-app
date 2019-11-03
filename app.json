@@ -1,5 +1,6 @@
 {
   "pages": [
+    "pages/intent/intent",
     "pages/resume/resume",
     "pages/mappage/mappage",
     "pages/index/index",
@@ -10,8 +11,7 @@
     "pages/success/success",
     "pages/message/message",
     "pages/member/member",
-    "pages/logs/logs",
-    "pages/intent/intent"
+    "pages/logs/logs"
   ],
   "window": {
     "backgroundTextStyle": "light",

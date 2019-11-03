@@ -147,3 +147,46 @@
   display: 100%;
   display: flex;
 }
+/**简历输入**/
+.resume-field {
+  border-bottom: 1px solid #ddd;
+  padding: 40rpx 0;
+}
+.resume-field-name {
+  display: block;
+  width: 100%;
+  text-align: center;
+  font-size: 33rpx;
+  color: #b1b1b1;
+  transition: all 0.2s linear;
+}
+.filled {
+  display: block;
+  text-align: center;
+  color: #333;
+  font-size: 33rpx;
+  margin-top: 30rpx;
+}
+
+.selectedField .filled {
+  display: none;
+}
+.selectedField .resume-field-name {
+  font-size: 25rpx;
+}
+
+
+.selectedField .input-name {
+  display: block;
+}
+.resume-input {
+  font-size: 33rpx;
+  color: #333;
+  text-align: center;
+  width: 80%;
+  display: block;
+  margin: 30rpx auto 0 auto;
+}
+.input-name {
+  display: none;
+}
