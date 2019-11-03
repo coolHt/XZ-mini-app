@@ -10,7 +10,8 @@
     "pages/success/success",
     "pages/message/message",
     "pages/member/member",
-    "pages/logs/logs"
+    "pages/logs/logs",
+    "pages/intent/intent"
   ],
   "window": {
     "backgroundTextStyle": "light",
@@ -27,6 +28,7 @@
   "usingComponents": {
     "van-transition": "/miniprogram_npm/vant-weapp/transition/index",
     "van-switch": "/miniprogram_npm/vant-weapp/switch/index",
-    "custom-nav": "/components/custom-nav/custom-nav"
+    "custom-nav": "/components/custom-nav/custom-nav",
+    "van-action-sheet": "/miniprogram_npm/vant-weapp/action-sheet/index"
   }
 }

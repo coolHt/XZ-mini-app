@@ -10,7 +10,10 @@ Page({
     foucsType: '',
     resumeName: '',
     resumeGender: '',
-    resumePhone: ''
+    resumePhone: '',
+    resumeBorth: '',
+    resumeDiploma:'',
+    resumeWorks: ''
   },
 
   /**
@@ -85,9 +88,37 @@ Page({
   },
   //移除时重置状态
   initFoucs: function(e){
+    if (e.currentTarget.dataset.inputtype == 'name') {
+      this.setData({
+        resumeName: e.detail.value,
+        inputType: ''
+      });
+    } else if (e.currentTarget.dataset.inputtype == 'phone') {
+      this.setData({
+        resumePhone: e.detail.value,
+        inputType: ''
+      });
+    }else{
+      this.setData({
+        inputType: ''
+      });
+    }
+
+  },
+  //选择性别
+  changeGender: function(e){
+    var datas = e.currentTarget.dataset.gender;
+    console.log(datas);
     this.setData({
-      inputType: ''
+      resumeGender: datas
     });
-    console.log(this.data.inputType);
+  },
+  //
+  saveProfile: function(){
+    return;
+  },
+  selectedArray: function(e){
+    var sType = e.currentTarget.dataset.select;
+    console.log(sType);
   }
 });

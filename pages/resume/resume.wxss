@@ -46,6 +46,13 @@
 .selectedField .input-name{
   display: block;
 }
+.filled{
+  display: block;
+  text-align: center;
+  color: #333;
+  font-size: 33rpx;
+  margin-top:30rpx;
+}
 .selectedField .filled{
   display: none;
 }
@@ -54,5 +61,75 @@
 }
 .resume-field{
   border-bottom: 1px solid #ddd;
-  padding: 50rpx 0;
+  padding: 40rpx 0;
+}
+.genderContainer{
+  display: flex;
+  justify-content: center;
+  margin-top: 30rpx;
+}
+.leftType {
+  margin-right: 50rpx;
+}
+.genderType{
+  display: flex;
+  align-items: center;
+  padding: 5rpx 20rpx 5rpx 10rpx;
+  border-radius: 50px;
+  border:1px solid #b1b1b1;
+}
+.genderType image{
+  display: block;
+  width: 30rpx;
+  height: auto;
+  margin-right: 10rpx;
+}
+.selectedGender{
+  border:1px solid #5f4b8b !important;
+  background: #5f4b8b;
+}
+.genderType text{
+  color: #b1b1b1;
+  font-size: 30rpx;
+}
+.selectedGender text{
+  color: #fff;
+}
+.save_profile{
+  width: 85%;
+  margin: 80rpx auto 0 auto;
+  font-size: 36rpx;
+  color: #fff;
+  padding: 20rpx 0;
+  background: #5f4b8b;
+  text-align: center;
+}
+.inforDisabled{
+  background: #b1b1b1;
+}
+.resume-brief-field{
+  display: flex;
+  width: 100%;
+  justify-content: space-between;
+  margin-top: 40rpx;
+}
+.fieldBorder{
+  border-left: 1px solid #ddd;
+  border-right: 1px solid #ddd;
+}
+.brief-field{
+  width: 33%;
+}
+.briefName{
+  display: block;
+  text-align: center;
+  font-size: 33rpx;
+  width: 100%;
+  color: #b1b1b1;
+}
+.briefValue{
+  margin-top: 30rpx;
+  text-align: center;
+  font-size: 33rpx;
+  color: #333;
 }

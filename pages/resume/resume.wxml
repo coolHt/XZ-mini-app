@@ -8,17 +8,44 @@
     </view>
     <view class="resume-field {{inputType == 'name' ? 'selectedField' : ''}}" bindtap="inputField" data-partition="name">
       <text class="resume-field-name">真实姓名</text>
-      <text class="filled">{{resumeName}}</text>
-      <input bindblur="initFoucs" focus="{{foucsType == 'name' ? true : false}}" value="{{resumeName}}" type="text" class="input-name resume-input"></input>
+      <text class="filled" wx:if="{{resumeName}}">{{resumeName}}</text>
+      <input bindblur="initFoucs" focus="{{foucsType == 'name' ? true : false}}" value="{{resumeName}}" type="text" class="input-name resume-input" data-inputtype="name"></input>
     </view>
-    <view class="resume-field {{inputType == 'gender' ? 'selectedField' : ''}}" data-partition="gender" bindtap="inputField">
+    <view class="resume-field">
       <text class="resume-field-name">性别</text>
-      <text class="filled">{{resumeGender}}</text>
-      <input bindblur="initFoucs" focus="{{foucsType == 'gender' ? true : false}}" value="{{resumeGender}}" type="text" class="input-name resume-input"></input>
+      <view class="genderContainer">
+        <view class="genderType leftType {{resumeGender == 'male'? 'selectedGender' : ''}}" bindtap="changeGender" data-gender="male">
+          <image mode="widthFix" src="../../assets/images/ic_male.png"></image>
+          <text>男</text>
+        </view>
+        <view class="genderType {{resumeGender == 'female'? 'selectedGender' : ''}}" bindtap="changeGender" data-gender="female">
+          <image mode="widthFix" src="../../assets/images/ic_female.png"></image>
+          <text>女</text>
+        </view>
+      </view>
     </view>
     <view class="resume-field {{inputType == 'phone' ? 'selectedField' : ''}}" data-partition="phone"  bindtap="inputField">
       <text class="resume-field-name">手机号</text>
-      <input bindblur="initFoucs" focus="{{foucsType == 'phone' ? true : false}}" value="{{resumePhone}}" type="text" class="input-name resume-input"></input>
+      <text class="filled" wx:if="{{resumePhone}}">{{resumePhone}}</text>
+      <input bindblur="initFoucs" focus="{{foucsType == 'phone' ? true : false}}" value="{{resumePhone}}" type="text" class="input-name resume-input" data-inputtype="phone"></input>
     </view>
+    <view class="resume-brief-field">
+      <view class="brief-field">
+        <text class="briefName">出生年份</text>
+        <input disabled="{{true}}" bindtap="selectedArray" class="briefValue" type="text" placeholder="请选择" value="{{resumeBorth}}" data-select="borth"></input>
+      </view>
+
+      <view class="brief-field fieldBorder">
+        <text class="briefName">最高学历</text>
+        <input disabled="{{true}}" bindtap="selectedArray" class="briefValue" type="text" placeholder="请选择" value="{{resumeDiploma}}" data-select="diploma"></input>
+      </view>
+
+      <view class="brief-field">
+        <text class="briefName">工作时间</text>
+        <input disabled="{{true}}" bindtap="selectedArray" class="briefValue" type="text" placeholder="请选择" value="{{resumeWorks}}" data-select="workTime"></input>
+      </view>
+    </view>
+
+    <view class="save_profile inforDisabled" bindtap="saveProfile">保存</view>
   </view>
 </view>
