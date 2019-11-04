@@ -1,5 +1,6 @@
 {
   "pages": [
+    "components/select-area/select-area",
     "pages/intent/intent",
     "pages/resume/resume",
     "pages/mappage/mappage",

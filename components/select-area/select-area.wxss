@@ -1,0 +1,28 @@
+.intentBox {
+  position: fixed;
+  width: 100%;
+  top: 0;
+  left: 0;
+  z-index: 999;
+  transition: all 0.3s linear;
+}
+.intentJob-header {
+  width: 100%;
+  background: #fff;
+  position: relative;
+}
+
+.intentJob-header text {
+  display: block;
+  width: 100%;
+  color: #333;
+  font-size: 36rpx;
+  text-align: center;
+}
+
+.closeIcon {
+  width: 22px;
+  height: auto;
+  display: block;
+  position: absolute;
+}

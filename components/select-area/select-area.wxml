@@ -1,0 +1,7 @@
+<!-- components/intent-job/intent-job.wxml -->
+<view class="container intentBox" style="height:{{h}}px;">
+  <view class="intentJob-header" style="height:{{buttonHeight}}px;padding:{{topSpace}}px 0;">
+    <text style="line-height:{{buttonHeight}}px">选择求职区域</text>
+    <image bindtap="choseIntent" mode="widthFix" class="closeIcon" src="../../assets/images/black_close.png" style="top:{{topSpace +  (buttonHeight-20) / 2}}px;left:{{topSpace / 2}}px"></image>
+  </view>
+</view>
