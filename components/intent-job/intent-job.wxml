@@ -1,34 +1,92 @@
 <!--components/intent-job/intent-job.wxml-->
 <view class="container">
-
-  <!--这里是个组件-->
-  <custom-nav navTitle="选择期望职位"></custom-nav>
-  <view class="intentContainer" style="margin-top:{{navInstance}}px;padding-top:40rpx;">
-    <scroll-view scroll-y="true" class="intentList" style="width: {{secondWidth == 0 ? w : secondWidth}}px;height: {{h}}px">
+  <view class="intentJob-header" style="height:{{buttonHeight}}px;padding:{{topSpace}}px 0;">
+    <text style="line-height:{{buttonHeight}}px">选择期望职位</text>
+    <image mode="widthFix" class="closeIcon" src="../../assets/images/black_close.png" style="top:{{topSpace +  (buttonHeight-20) / 2}}px;left:{{topSpace / 2}}px"></image>
+  </view>
+  <view class="intentContainer" style="box-sizing:border-box; ">
+    <scroll-view scroll-y="true" class="intentList" style="width: {{secondWidth == 0 ? w : secondWidth}}px;height: {{h - buttonHeight - 2 *  topSpace}}px">
       <view>
-        <view class="intent-first" data-intentType="1" bindtap="showCatelogue">销售</view>
-        <view class="intent-first" data-intentType="2" bindtap="showCatelogue">客服</view>
-        <view class="intent-first">人事/行政/后勤</view>
-        <view class="intent-first">餐饮</view>
-        <view class="intent-first">旅游</view>
-        <view class="intent-first">酒店</view>
-        <view class="intent-first">超市/百货零售</view>
-        <view class="intent-first">美容/美发</view>
-        <view class="intent-first">保健按摩</view>
-        <view class="intent-first">运动健身</view>
-        <view class="intent-first">普工/技工</view>
-        <view class="intent-first">生成管理/研发</view>
-        <view class="intent-first">建筑</view>
-        <view class="intent-first">物业管理</view>
-        <view class="intent-first">房产中介</view>
-        <view class="intent-first">家政保洁/安保</view>
-        <view class="intent-first">司机/交通服务</view>
-        <view class="intent-first">物流/仓储</view>
+        <view class="intent-first {{selectedFirst === '1' ? 'selectedStyle' : ''}}" data-intentType="1" bindtap="showCatelogue">
+          <text>销售</text>
+          <view class="triangle"></view>
+        </view>
+        <view class="intent-first {{selectedFirst === '2' ? 'selectedStyle' : ''}}" data-intentType="2" bindtap="showCatelogue">
+          <text>客服</text>
+          <view class="triangle"></view>
+        </view>
+        <view class="intent-first">
+          <text>人事/行政/后勤</text>
+          <view class="triangle"></view>
+        </view>
+        <view class="intent-first">
+          <text>餐饮</text>
+          <view class="triangle"></view>
+        </view>
+        <view class="intent-first">
+          <text>旅游</text>
+          <view class="triangle"></view>
+        </view>
+        <view class="intent-first">
+          <text>酒店</text>
+          <view class="triangle"></view>
+        </view>
+        <view class="intent-first">
+          <text>超市/百货零售</text>
+          <view class="triangle"></view>
+        </view>
+        <view class="intent-first">
+          <text>美容/美发</text>
+          <view class="triangle"></view>
+        </view>
+        <view class="intent-first">
+          <text>保健按摩</text>
+          <view class="triangle"></view>
+        </view>
+        <view class="intent-first">
+          <text>运动健身</text>
+          <view class="triangle"></view>
+        </view>
+        <view class="intent-first">
+          <text>普工/技工</text>
+          <view class="triangle"></view>
+        </view>
+        <view class="intent-first">
+          <text>生成管理/研发</text>
+          <view class="triangle"></view>
+        </view>
+        <view class="intent-first">
+          <text>建筑</text>
+          <view class="triangle"></view>
+        </view>
+        <view class="intent-first">
+          <text>物业管理</text>
+          <view class="triangle"></view>
+        </view>
+        <view class="intent-first">
+          <text>房产中介</text>
+          <view class="triangle"></view>
+        </view>
+        <view class="intent-first">
+          <text>家政保洁/安保</text>
+          <view class="triangle"></view>
+        </view>
+        <view class="intent-first">
+          <text>司机/交通服务</text>
+          <view class="triangle"></view>
+        </view>
+        <view class="intent-first">
+          <text>物流/仓储</text>
+          <view class="triangle"></view>
+        </view>
       </view>
     </scroll-view>
 
-    <scroll-view class="intentChild" style="width:{{secondWidth}}px;max-height:{{h}}px">
-      <view class="intent-first intent-second" data-intentType="{{index}}" wx:for="{{showSecondList}}">{{item}}</view>
+    <scroll-view scroll-y="true" class="intentChild" style="width:{{secondWidth}}px;height:{{h - buttonHeight - 2 * topSpace}}px">
+      <view class="intent-first intent-second  {{checkJob == index ? 'checked' : ''}}" wx:for="{{showSecondList}}" data-tickIndex="{{index}}" bindtap="clickJob">
+        <text>{{item}}</text>
+        <image src="../../assets/images/tick.png" class="tickIcon" mode="widthFix"></image>
+      </view>
     </scroll-view>
   </view>
 </view>

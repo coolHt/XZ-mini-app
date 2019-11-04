@@ -2,6 +2,7 @@
 .intentContainer{
   width: 100%;
   display: flex;
+  box-sizing: border-box;
 }
 .intentList{
   transition:all 0.2s linear;
@@ -11,7 +12,6 @@
   overflow: hidden;
   position: relative;
   height: auto;
-  background: #f1f1f1;
   transition:all 0.2s linear;
 }
 .intent-first{
@@ -22,4 +22,59 @@
   border-bottom: 1px solid #ddd;
   box-sizing: border-box;
   white-space: nowrap;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  background: #fff;
+}
+.intentChild .intent-first {
+background: #fafafa;
+}
+.intentJob-header{
+  width: 100%;
+  background:#fff;
+  position: relative;
+}
+.intentJob-header text{
+  display: block;
+  width: 100%;
+  color: #333;
+  font-size: 36rpx;
+  text-align: center;
+}
+.closeIcon {
+  width: 22px;
+  height: auto;
+  display: block;
+  position: absolute;
+}
+.triangle{
+  border:10rpx solid #e6e6e6;
+  border-top-color: #fff;
+  border-right-color: #fff;
+  border-bottom-color: #fff;
+  display: none;
+}
+.selectedStyle{
+background:#fafafa !important;
+}
+.selectedStyle .triangle {
+ background:#fafafa !important;
+ border-top-color: #fafafa;
+ border-right-color: #fafafa;
+ border-bottom-color: #fafafa;
+ display: block;
+}
+.intent-second{
+  width: 100%;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.tickIcon{
+  width: 35rpx;
+  display: none;
+}
+.checked .tickIcon {
+  display: block;
 }

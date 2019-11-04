@@ -1,4 +1,4 @@
-var host = 'm.azhiye.com';
+var host = 'ltapp.azhiye.com';
 var config = {
   service: {
     host,

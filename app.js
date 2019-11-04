@@ -18,11 +18,11 @@ App({
       wx.login({
         success: function(res){
           wx.request({
-            url: config.loginUrl,
+            url: config.service.loginUrl,
             data: {
               code: res.code
             }
-          })
+          });
         },
         fail: function(){
           console.log('失败');
