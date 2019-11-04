@@ -1,4 +1,7 @@
 //app.js
+var config = require('./config');
+var qcloud = require('./bower_components/wafer-client-sdk/index.js');
+
 App({
   onLaunch: function () {
     // 展示本地存储能力
@@ -12,6 +15,19 @@ App({
         navInstance: menuButton.height + menuButton.top
       };
       
+      wx.login({
+        success: function(res){
+          wx.request({
+            url: config.loginUrl,
+            data: {
+              code: res.code
+            }
+          })
+        },
+        fail: function(){
+          console.log('失败');
+        }
+      });
 
     //授权获取当前地址
     const _this = this;

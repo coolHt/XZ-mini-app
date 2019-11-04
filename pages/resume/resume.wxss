@@ -47,8 +47,8 @@
   margin-right: 10rpx;
 }
 .selectedGender{
-  border:1px solid #5f4b8b !important;
-  background: #5f4b8b;
+  border:1px solid #fa7268 !important;
+  background: #fa7268;
 }
 .genderType text{
   color: #b1b1b1;

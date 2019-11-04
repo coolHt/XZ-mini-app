@@ -1,11 +1,56 @@
 <view class="container">
-  <view>
+  <!--这里是个组件-->
+  <custom-nav navTitle="我的简历"></custom-nav>
+  <view  style="margin-top:{{navInstance}}px;padding-top:40rpx;">
     <view class="intent-container">
-      <view class="resume-field {{inputType == 'phone' ? 'selectedField' : ''}}" data-partition="phone"  bindtap="inputField">
-      <text class="resume-field-name">手机号</text>
-      <text class="filled" wx:if="{{resumePhone}}">{{resumePhone}}</text>
-      <input bindblur="initFoucs" focus="{{foucsType == 'phone' ? true : false}}" value="{{resumePhone}}" type="text" class="input-name resume-input" data-inputtype="phone"></input>
-    </view>
+      <view class="intent-partition">
+        <text class="intent-title">个人资料</text>
+        <navigator url="../resume/resume">
+          <view class="edit-cursor">
+            <text>修改</text>
+            <image mode="widthFix" src="../../assets/images/ic_editinfo.png" class="edit_icon"></image>
+          </view>
+        </navigator>
+        <view class="previewInfor">
+          <image class="preview-avatar" mode="widthFix" src="../../assets/images/logo.png"></image>
+          <view class="preivewField">
+            <view class="previewName">
+              <text class="name_field">黄天</text>
+              <view class="preview-gender male_bg">
+                <image mode="widthFix" src="../../assets/images/w_male.png"></image>
+                <text>24</text>
+              </view>
+            </view>
+            <view class="previewAnother">
+              <text>本科</text><text>应届生</text>
+            </view>
+          </view>
+        </view>
+      </view>
+      <view class="intent-partition">
+        <text class="intent-title">求职意向</text>
+        <view class="resume-field {{inputType == 'phone' ? 'selectedField' : ''}}" data-partition="phone"
+          bindtap="inputField">
+          <text class="resume-field-name">期望职位</text>
+          <text class="filled" wx:if="{{resumePhone}}">{{resumePhone}}</text>
+          <input bindblur="initFoucs" focus="{{foucsType == 'phone' ? true : false}}" value="{{resumePhone}}"
+            type="text" class="input-name resume-input" data-inputtype="phone"></input>
+        </view>
+        <view class="resume-field {{inputType == 'phone' ? 'selectedField' : ''}}" data-partition="phone"
+          bindtap="inputField">
+          <text class="resume-field-name">期望薪资</text>
+          <text class="filled" wx:if="{{resumePhone}}">{{resumePhone}}</text>
+          <input bindblur="initFoucs" focus="{{foucsType == 'phone' ? true : false}}" value="{{resumePhone}}"
+            type="text" class="input-name resume-input" data-inputtype="phone"></input>
+        </view>
+        <view class="resume-field {{inputType == 'phone' ? 'selectedField' : ''}}" data-partition="phone"
+          bindtap="inputField">
+          <text class="resume-field-name">求职区域</text>
+          <text class="filled" wx:if="{{resumePhone}}">{{resumePhone}}</text>
+          <input bindblur="initFoucs" focus="{{foucsType == 'phone' ? true : false}}" value="{{resumePhone}}"
+            type="text" class="input-name resume-input" data-inputtype="phone"></input>
+        </view>
+      </view>
     </view>
   </view>
 </view>

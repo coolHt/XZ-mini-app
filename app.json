@@ -1,8 +1,9 @@
 {
   "pages": [
-    "pages/intent/intent",
     "pages/resume/resume",
     "pages/mappage/mappage",
+    "pages/intent/intent",
+    "components/intent-job/intent-job",
     "pages/index/index",
     "pages/jobDetail/jobDetail",
     "pages/companyDetail/companyDetail",

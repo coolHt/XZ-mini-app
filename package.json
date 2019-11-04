@@ -17,6 +17,7 @@
   },
   "homepage": "https://github.com/coolHt/Xz-mini-app#readme",
   "dependencies": {
+    "qcloud-weapp-client-sdk": "^0.7.4",
     "vant-weapp": "^1.0.0-beta.0"
   }
 }
