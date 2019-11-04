@@ -59,16 +59,16 @@ Component({
     //关闭求职意向
     choseIntent: function(){
       this.setData({
-        isCloseIntent: true,
-        showSecondList: [],
-        selectedFirst: '',
-        checkJob: ''
+        isCloseIntent: true
       });
       var _this = this;
-      //延迟初始化宽度
+      //延迟初始化数据
       var deferInit = setTimeout(function(){
         _this.setData({
-          secondWidth: 0
+          secondWidth: 0,
+          showSecondList: [],
+          selectedFirst: '',
+          checkJob: ''
         });
         clearTimeout(deferInit);
       },500);
