@@ -1,4 +1,6 @@
 {
-  "usingComponents": {},
+  "usingComponents": {
+    "intent-job": "/components/intent-job/intent-job"
+  },
   "navigationStyle": "custom"
 }

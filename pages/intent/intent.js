@@ -5,7 +5,8 @@ Page({
    * 页面的初始数据
    */
   data: {
-    navInstance: 0
+    navInstance: 0,
+    closeJobList: true
   },
 
   /**
@@ -65,5 +66,24 @@ Page({
    */
   onShareAppMessage: function () {
 
+  },
+  //点击选择
+  inputField: function(e){
+    var t = e.currentTarget.dataset.partition;
+    if(t === 'job'){
+      this.setData({
+        closeJobList: false
+      });
+    }else if(t === 'salary'){
+
+    }else if(t === 'area'){
+
+    }
+  },
+  //监听组件关闭
+  watchClose: function(){ //关闭职位选择
+    this.setData({
+      closeJobList: true
+    });
   }
-})
+});

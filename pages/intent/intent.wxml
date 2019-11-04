@@ -1,7 +1,7 @@
 <view class="container">
   <!--这里是个组件-->
   <custom-nav navTitle="我的简历"></custom-nav>
-  <view  style="margin-top:{{navInstance}}px;padding-top:40rpx;">
+  <view style="margin-top:{{navInstance}}px;padding-top:40rpx;">
     <view class="intent-container">
       <view class="intent-partition">
         <text class="intent-title">个人资料</text>
@@ -29,28 +29,29 @@
       </view>
       <view class="intent-partition">
         <text class="intent-title">求职意向</text>
-        <view class="resume-field {{inputType == 'phone' ? 'selectedField' : ''}}" data-partition="phone"
+        <view class="resume-field" data-partition="job"
           bindtap="inputField">
           <text class="resume-field-name">期望职位</text>
           <text class="filled" wx:if="{{resumePhone}}">{{resumePhone}}</text>
-          <input bindblur="initFoucs" focus="{{foucsType == 'phone' ? true : false}}" value="{{resumePhone}}"
-            type="text" class="input-name resume-input" data-inputtype="phone"></input>
+          <input value="{{resumePhone}}"
+            type="text" class="input-name resume-input"></input>
         </view>
-        <view class="resume-field {{inputType == 'phone' ? 'selectedField' : ''}}" data-partition="phone"
+        <view class="resume-field" data-partition="salary"
           bindtap="inputField">
           <text class="resume-field-name">期望薪资</text>
           <text class="filled" wx:if="{{resumePhone}}">{{resumePhone}}</text>
-          <input bindblur="initFoucs" focus="{{foucsType == 'phone' ? true : false}}" value="{{resumePhone}}"
-            type="text" class="input-name resume-input" data-inputtype="phone"></input>
+          <input value="{{resumePhone}}"
+            type="text" class="input-name resume-input"></input>
         </view>
-        <view class="resume-field {{inputType == 'phone' ? 'selectedField' : ''}}" data-partition="phone"
+        <view class="resume-field" data-partition="area"
           bindtap="inputField">
           <text class="resume-field-name">求职区域</text>
           <text class="filled" wx:if="{{resumePhone}}">{{resumePhone}}</text>
-          <input bindblur="initFoucs" focus="{{foucsType == 'phone' ? true : false}}" value="{{resumePhone}}"
-            type="text" class="input-name resume-input" data-inputtype="phone"></input>
+          <input value="{{resumePhone}}"
+            type="text" class="input-name resume-input"></input>
         </view>
       </view>
     </view>
   </view>
 </view>
+<intent-job close="{{closeJobList}}" bind:triggerClose="watchClose"></intent-job>

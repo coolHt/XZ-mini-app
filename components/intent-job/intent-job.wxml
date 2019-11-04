@@ -1,8 +1,8 @@
 <!--components/intent-job/intent-job.wxml-->
-<view class="container">
+<view class="container intentBox" style="height:{{h}}px;top: {{isCloseIntent ? h : 0}}px;">
   <view class="intentJob-header" style="height:{{buttonHeight}}px;padding:{{topSpace}}px 0;">
     <text style="line-height:{{buttonHeight}}px">选择期望职位</text>
-    <image mode="widthFix" class="closeIcon" src="../../assets/images/black_close.png" style="top:{{topSpace +  (buttonHeight-20) / 2}}px;left:{{topSpace / 2}}px"></image>
+    <image bindtap="choseIntent" mode="widthFix" class="closeIcon" src="../../assets/images/black_close.png" style="top:{{topSpace +  (buttonHeight-20) / 2}}px;left:{{topSpace / 2}}px"></image>
   </view>
   <view class="intentContainer" style="box-sizing:border-box; ">
     <scroll-view scroll-y="true" class="intentList" style="width: {{secondWidth == 0 ? w : secondWidth}}px;height: {{h - buttonHeight - 2 *  topSpace}}px">
@@ -83,7 +83,7 @@
     </scroll-view>
 
     <scroll-view scroll-y="true" class="intentChild" style="width:{{secondWidth}}px;height:{{h - buttonHeight - 2 * topSpace}}px">
-      <view class="intent-first intent-second  {{checkJob == index ? 'checked' : ''}}" wx:for="{{showSecondList}}" data-tickIndex="{{index}}" bindtap="clickJob">
+      <view class="intent-first intent-second  {{checkJob === index ? 'checked' : ''}}" wx:for="{{showSecondList}}" data-tickIndex="{{index}}" bindtap="clickJob">
         <text>{{item}}</text>
         <image src="../../assets/images/tick.png" class="tickIcon" mode="widthFix"></image>
       </view>
