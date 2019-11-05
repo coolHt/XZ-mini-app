@@ -2,8 +2,8 @@
   "pages": [
     "components/select-area/select-area",
     "pages/intent/intent",
-    "pages/resume/resume",
     "pages/mappage/mappage",
+    "pages/resume/resume",
     "pages/index/index",
     "pages/jobDetail/jobDetail",
     "pages/companyDetail/companyDetail",

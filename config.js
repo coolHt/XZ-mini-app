@@ -2,11 +2,11 @@ var host = 'ltapp.azhiye.com';
 var config = {
   service: {
     host,
-    loginUrl: `https://${host}/login`,
-    requestUrl: `https://${host}/user`,
+    loginUrl: `https://${host}/Login`,
+    requestUrl: `https://${host}/Psninfo`,
     tunnelUrl: `https://${host}/tunnel`,
     secretUrl: `https://${host}/secret`,
-    uploadUrl: `https://${host}/upload`
+    uploadUrl: `https://${host}/EntBin`
   }
 };
 

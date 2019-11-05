@@ -1,7 +1,71 @@
 <!-- components/intent-job/intent-job.wxml -->
-<view class="container intentBox" style="height:{{h}}px;">
-  <view class="intentJob-header" style="height:{{buttonHeight}}px;padding:{{topSpace}}px 0;">
+<view class="container intentBox">
+  <view class="intentJob-header" style="height:{{buttonHeight}}px;padding:{{topSpace}}px 0 0 0;">
     <text style="line-height:{{buttonHeight}}px">选择求职区域</text>
-    <image bindtap="choseIntent" mode="widthFix" class="closeIcon" src="../../assets/images/black_close.png" style="top:{{topSpace +  (buttonHeight-20) / 2}}px;left:{{topSpace / 2}}px"></image>
+    <image bindtap="choseIntent" mode="widthFix" class="closeIcon" src="../../assets/images/black_close.png"
+      style="top:{{topSpace +  (buttonHeight-20) / 2}}px;left:{{topSpace / 2}}px"></image>
   </view>
+  <!--已选择-->
+  <view class="selectedArea">
+    <view class="selectedList">
+      <text class="selectedListTitle">已选择:</text>
+      <view class="selectedTags">
+        <text>鄞州</text>
+        <image mode="widthFix" src="../../assets/images/white_close.png"></image>
+      </view>
+      <view class="selectedTags">
+        <text>北仑</text>
+        <image mode="widthFix" src="../../assets/images/white_close.png"></image>
+      </view>
+    </view>
+    <view class="currentArea">
+      <text>宁波</text>
+      <view class="triangle_down"></view>
+    </view>
+  </view>
+
+  <!--区域-->
+  <view class="areaContainer">
+    <view class="areaItem" wx:for="{{areaList}}">{{item}}</view>
+  </view>
+
+  <!--城市选择-->
+  <scroll-view scroll-y="true" class="cityContainer" style="height:{{h}}px">
+    <view class="intentJob-header" style="height:{{buttonHeight}}px;padding:{{topSpace}}px 0 0 0;">
+      <text style="line-height:{{buttonHeight}}px">选择城市</text>
+      <image bindtap="choseIntent" mode="widthFix" class="closeIcon" src="../../assets/images/black_close.png"
+        style="top:{{topSpace +  (buttonHeight-20) / 2}}px;left:{{topSpace / 2}}px"></image>
+    </view>
+    <view class="searchCity" style="position:fixed;top:{{buttonHeight+topSpace}}px">
+      <input type="text" placeholder="请输入城市名称或首字母查询" placeholder-style="color:#b1b1b1;"></input>
+    </view>
+    <view class="citys" style="margin-top:{{buttonHeight+topSpace}}px;padding-top:90rpx;">
+      <view class="cityPartition">
+        <text class="cityType">当前位置</text>
+        <view class="cityRow">
+          <view class="city-item">北京</view>
+          <view class="city-item">深圳</view>
+          <view class="city-item">重庆</view>
+        </view>
+      </view>
+      <view class="cityPartition">
+        <text class="cityType">热门城市</text>
+        <view class="cityRow">
+          <view class="city-item" wx:for="{{hot}}">{{item}}</view>
+        </view>
+      </view>
+      <!--按字母排列-->
+      <view class="ranking-area">
+        <view class="ranking-item" wx:for="{{ranking}}">
+          <view wx:if="{{item.data.length > 0}}">
+            <text class="ranking-Title">{{item.name}}</text>
+            <view class="single-city" wx:for="{{item.data}}"  wx:for-item="areaWidget">{{areaWidget.name}}</view>
+          </view>
+        </view>
+      </view>
+    </view>
+    <view class="columnSearch">
+      <text class="column_route" wx:for="{{words}}">{{item}}</text>
+    </view>
+  </scroll-view>
 </view>
