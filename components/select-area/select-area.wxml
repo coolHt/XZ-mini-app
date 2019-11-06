@@ -26,7 +26,7 @@
 
   <!--区域-->
   <view class="areaContainer">
-    <view class="areaItem" wx:for="{{areaList}}">{{item}}</view>
+    <view class="areaItem" wx:for="{{areaList}}">{{item.name}}</view>
   </view>
 
   <!--城市选择-->

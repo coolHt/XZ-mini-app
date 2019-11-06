@@ -48,16 +48,7 @@ Component({
       "Z"
     ],
     searchResult: [],
-    areaList: [
-      "鄞州区",
-      "海曙区",
-      "北仑",
-      "象山",
-      "慈溪",
-      "江北",
-      "慈城",
-      "余姚"
-    ],
+    areaList: [],
     areaArray: {
       city1: ["鄞州区"],
       city2: ["海曙区"],
@@ -90,6 +81,19 @@ Component({
             selectCityLeft: res.screenWidth
           });
         }
+      });
+      //获取所有区域
+      var area = areas.default.area;
+      var areaList = [];
+      //筛选当前城市下的所有区域
+      var code = this.data.currentCity.code.toString().substr(0, 4);
+      for(let i = 0; i < area.length; i++){
+        if(code === area[i].code.toString().substr(0,4)){
+          areaList.push(area[i]);
+        }
+      }
+      this.setData({
+        areaList: areaList
       });
     }
   },
