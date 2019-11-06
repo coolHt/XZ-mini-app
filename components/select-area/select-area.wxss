@@ -12,6 +12,7 @@
   position: fixed;
   left:0;
   top:0;
+  transition: all 0.2s linear;
 }
 
 .intentJob-header text {
@@ -103,6 +104,7 @@
   top:0;
   width: 100%;
   background: #f1f1ef;
+  transition: all 0.2s linear;
 }
 .cityContainer .intentJob-header {
   background: #f1f1ef;
@@ -114,6 +116,7 @@
   background: #f5f5f5;
   position: relative;
   z-index: 99;
+  transition: all 0.2s linear;
 }
 .searchCity input{
   display: block;

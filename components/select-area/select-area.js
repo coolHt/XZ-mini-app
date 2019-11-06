@@ -13,6 +13,11 @@ Component({
     w: 0, //可视屏屏宽
     h: 0, //可视屏屏高
     navInstance: 0,
+    selectCityLeft: 0, //选择城市页面的初始位置
+    currentCity: {
+      name:"杭州市",
+      code:330102
+    }, //当前地址
     topSpace: 0, //按钮距离顶部的位置
     searchValue: "", //搜索城市的文字
     buttonHeight: 0, //按钮的高度,
@@ -81,7 +86,8 @@ Component({
             w: res.screenWidth,
             h: res.screenHeight,
             topSpace: menuButton.top,
-            buttonHeight: menuButton.height
+            buttonHeight: menuButton.height,
+            selectCityLeft: res.screenWidth
           });
         }
       });
@@ -203,6 +209,18 @@ Component({
    * 组件的方法列表
    */
   methods: {
+    //显示城市选择
+    showSelectArea: function(){
+      this.setData({
+        selectCityLeft: 0
+      });
+    },
+    //关闭城市选择
+    choseIntent: function(){
+      this.setData({
+        selectCityLeft: this.data.w
+      });
+    },
     //跳转排序
     routeArea: function(e) {
       var _this = this;
@@ -242,8 +260,10 @@ Component({
     chooseCity: function(e) {
       var cityInfor = e.currentTarget.dataset.city;
       this.setData({
+        currentCity: cityInfor,
         searchValue: cityInfor.name,
-        searchResult: []
+        searchResult: [],
+        selectCityLeft: this.data.w
       });
     },
     //点击当前页面
