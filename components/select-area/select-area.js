@@ -14,6 +14,7 @@ Component({
     h: 0, //可视屏屏高
     navInstance: 0,
     topSpace: 0, //按钮距离顶部的位置
+    searchValue: "", //搜索城市的文字
     buttonHeight: 0, //按钮的高度,
     ranking: {}, //城市排序
     scrollTop: 0, //滚动距离
@@ -41,6 +42,7 @@ Component({
       "Y",
       "Z"
     ],
+    searchResult: [],
     areaList: [
       "鄞州区",
       "海曙区",
@@ -217,5 +219,41 @@ Component({
         });
       });
     },
+    //响应输入
+    watchInput: function(e) {
+      var v = e.detail.value.trim();
+      var result = [];
+      var city = areas.default.city; //所有城市
+      if (v) {
+        city.forEach(function(c) {
+          if (c.name.indexOf(v) > -1) {
+            result.push(c);
+          }
+        });
+      } else {
+        result = [];
+      }
+      //
+      this.setData({
+        searchResult: result
+      });
+    },
+    //选择城市
+    chooseCity: function(e) {
+      var cityInfor = e.currentTarget.dataset.city;
+      this.setData({
+        searchValue: cityInfor.name,
+        searchResult: []
+      });
+    },
+    //点击当前页面
+    clickPage(e){
+      var currentT = e.target;
+      if (currentT.id !== "searchInput" && currentT.id.indexOf("resultCity") < 0) {
+        this.setData({
+          searchResult: []
+        });
+      }
+    }
   }
 });
