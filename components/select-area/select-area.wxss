@@ -1,10 +1,10 @@
 .intentBox {
-  position: fixed;
+  /* position: fixed;
   width: 100%;
   top: 0;
   left: 0;
   z-index: 999;
-  transition: all 0.3s linear;
+  transition: all 0.3s linear; */
 }
 .intentJob-header {
   width: 100%;
@@ -30,6 +30,8 @@
   position: absolute;
 }
 .selectedArea{
+  background:#fff;
+  z-index: 10;
   width:100%;
   display: flex;
   justify-content: space-between;
@@ -56,7 +58,7 @@
   margin-top: 10rpx;
 }
 .selectedList{
-  padding-top: 10rpx;
+  height: 80rpx;
   display: flex;
   align-items: center;
 }
@@ -105,6 +107,7 @@
   width: 100%;
   background: #f1f1ef;
   transition: all 0.2s linear;
+  z-index: 99;
 }
 .cityContainer .intentJob-header {
   background: #f1f1ef;
@@ -206,7 +209,7 @@
   text-align: center;
 }
 .columnSearch{
-  position:fixed;
+  position: fixed;
   right:0;
   width: 20px;
   top:20%;

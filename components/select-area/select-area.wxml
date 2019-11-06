@@ -6,7 +6,7 @@
       style="top:{{topSpace +  (buttonHeight-20) / 2}}px;left:{{topSpace / 2}}px"></image>
   </view>
   <!--已选择-->
-  <view class="selectedArea" style="margin-top:{{buttonHeight+topSpace}}px">
+  <view class="selectedArea" style="position:fixed;top:{{buttonHeight+topSpace}}px">
     <view class="selectedList">
       <text class="selectedListTitle">已选择:</text>
       <view class="selectedTags">
@@ -25,7 +25,7 @@
   </view>
 
   <!--区域-->
-  <view class="areaContainer">
+  <view class="areaContainer" style="margin-top:{{buttonHeight+topSpace}}px;padding-top:80rpx;">
     <view class="areaItem" wx:for="{{areaList}}">{{item.name}}</view>
   </view>
 
@@ -69,7 +69,7 @@
         </view>
       </view>
     </view>
-    <view class="columnSearch">
+    <view class="columnSearch" style="position:{{selectCityLeft === 0 ? 'fixed' : 'absolute'}}">
       <text class="column_route" wx:for="{{words}}" data-ranking="{{item}}" bindtap="routeArea">{{item}}</text>
     </view>
   </scroll-view>

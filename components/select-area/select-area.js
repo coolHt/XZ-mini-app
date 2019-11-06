@@ -15,8 +15,8 @@ Component({
     navInstance: 0,
     selectCityLeft: 0, //选择城市页面的初始位置
     currentCity: {
-      name:"杭州市",
-      code:330102
+      name: "杭州市",
+      code: 330102
     }, //当前地址
     topSpace: 0, //按钮距离顶部的位置
     searchValue: "", //搜索城市的文字
@@ -66,6 +66,12 @@ Component({
       "重庆"
     ]
   },
+  observers: {
+    'currentCity': function(currentCity) {
+      console.log(currentCity);
+      this.filterArea(currentCity);
+    }
+  },
   //生命周期
   lifetimes: {
     attached: function() {
@@ -80,21 +86,11 @@ Component({
             buttonHeight: menuButton.height,
             selectCityLeft: res.screenWidth
           });
+
+          _this.filterArea(_this.data.currentCity);
         }
       });
-      //获取所有区域
-      var area = areas.default.area;
-      var areaList = [];
-      //筛选当前城市下的所有区域
-      var code = this.data.currentCity.code.toString().substr(0, 4);
-      for(let i = 0; i < area.length; i++){
-        if(code === area[i].code.toString().substr(0,4)){
-          areaList.push(area[i]);
-        }
-      }
-      this.setData({
-        areaList: areaList
-      });
+      
     }
   },
   pageLifetimes: {
@@ -214,13 +210,30 @@ Component({
    */
   methods: {
     //显示城市选择
-    showSelectArea: function(){
+    showSelectArea: function() {
       this.setData({
         selectCityLeft: 0
       });
     },
+    //根据所选城市选择区域
+    filterArea: function(city){
+      console.log(city);
+      //获取所有区域
+      var area = areas.default.area;
+      var areaList = [];
+      //筛选当前城市下的所有区域
+      var code = city.code.toString().substr(0, 4);
+      for (let i = 0; i < area.length; i++) {
+        if (code === area[i].code.toString().substr(0, 4)) {
+          areaList.push(area[i]);
+        }
+      }
+      this.setData({
+        areaList: areaList
+      });
+    },
     //关闭城市选择
-    choseIntent: function(){
+    choseIntent: function() {
       this.setData({
         selectCityLeft: this.data.w
       });
@@ -271,9 +284,12 @@ Component({
       });
     },
     //点击当前页面
-    clickPage(e){
+    clickPage(e) {
       var currentT = e.target;
-      if (currentT.id !== "searchInput" && currentT.id.indexOf("resultCity") < 0) {
+      if (
+        currentT.id !== "searchInput" &&
+        currentT.id.indexOf("resultCity") < 0
+      ) {
         this.setData({
           searchResult: []
         });
