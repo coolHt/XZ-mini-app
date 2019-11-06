@@ -30,7 +30,7 @@
   </view>
 
   <!--城市选择-->
-  <scroll-view scroll-y="true" class="cityContainer" style="height:{{h}}px">
+  <scroll-view scroll-top="{{scrollTop}}px" scroll-y="true" class="cityContainer" style="height:{{h}}px">
     <view class="intentJob-header" style="height:{{buttonHeight}}px;padding:{{topSpace}}px 0 0 0;">
       <text style="line-height:{{buttonHeight}}px">选择城市</text>
       <image bindtap="choseIntent" mode="widthFix" class="closeIcon" src="../../assets/images/black_close.png"
@@ -38,8 +38,9 @@
     </view>
     <view class="searchCity" style="position:fixed;top:{{buttonHeight+topSpace}}px">
       <input type="text" placeholder="请输入城市名称或首字母查询" placeholder-style="color:#b1b1b1;"></input>
+      <view class="searchResult"></view>
     </view>
-    <view class="citys" style="margin-top:{{buttonHeight+topSpace}}px;padding-top:90rpx;">
+    <view id="citys" class="citys" style="margin-top:{{buttonHeight+topSpace}}px;padding-top:90rpx;">
       <view class="cityPartition">
         <text class="cityType">当前位置</text>
         <view class="cityRow">
@@ -56,7 +57,7 @@
       </view>
       <!--按字母排列-->
       <view class="ranking-area">
-        <view class="ranking-item" wx:for="{{ranking}}">
+        <view id="{{'area' + item.name}}" class="ranking-item" wx:for="{{ranking}}">
           <view wx:if="{{item.data.length > 0}}">
             <text class="ranking-Title">{{item.name}}</text>
             <view class="single-city" wx:for="{{item.data}}"  wx:for-item="areaWidget">{{areaWidget.name}}</view>
@@ -65,7 +66,7 @@
       </view>
     </view>
     <view class="columnSearch">
-      <text class="column_route" wx:for="{{words}}">{{item}}</text>
+      <text class="column_route" wx:for="{{words}}" data-ranking="{{item}}" bindtap="routeArea">{{item}}</text>
     </view>
   </scroll-view>
 </view>
